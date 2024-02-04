@@ -259,6 +259,117 @@
       </td>
     </tr>
 
+    <!--BOKEH 2023-->
+    <tr onmouseout="bokeh_stop()" onmouseover="bokeh_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+
+        <div class="one">
+          <div class="two" id='bokeh_image'>
+            
+            <img src='images/bokeh_after.jpg' width="170">
+          <!--
+            <video  width=100% height=100% muted autoplay loop>
+            <source src="images/nilut.gif" type="video/gif">
+            Your browser does not support the video tag.
+            </video>
+          -->
+          </div>
+          <img src='images/bokeh_before.jpg' width="170">
+        </div>
+        <script type="text/javascript">
+          function bokeh_start() {
+            document.getElementById('bokeh_image').style.opacity = "1";
+          }
+
+          function bokeh_stop() {
+            document.getElementById('bokeh_image').style.opacity = "0";
+          }
+          bokeh_stop()
+        </script>
+
+      </td>
+
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/papers/Seizinger_Efficient_Multi-Lens_Bokeh_Effect_Rendering_and_Transformation_CVPRW_2023_paper.pdf">
+          <span class="papertitle">
+            Efficient multi-lens bokeh effect rendering and transformation</span>
+        </a>
+        <br>
+        <a href="https://scholar.google.com/citations?hl=en&user=PKdW78wAAAAJ">Tim Seizinger*</a>,
+        <strong>Marcos V. Conde*</strong>,
+        <a href="https://scholar.google.com/citations?hl=en&user=lZDp1vQAAAAJ">Manuel Kolmet</a>,
+        <a href="https://scholar.google.com/citations?user=jjF4cMYAAAAJ&hl=en">Tom E Bishop</a>,
+        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
+        <br>
+        <em>CVPR Workshop</em>, 2023
+        <br>
+        <a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/papers/Seizinger_Efficient_Multi-Lens_Bokeh_Effect_Rendering_and_Transformation_CVPRW_2023_paper.pdf">paper</a>
+        /
+        <a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Seizinger_Efficient_Multi-Lens_Bokeh_Effect_Rendering_and_Transformation_CVPRW_2023_paper.html">cvf Proceedings</a>
+        /
+        <a href="https://github.com/mv-lab/AISP">GitHub</a>
+        <p></p>
+        <p>EBokehNet, an efficient state-of-the-art solution for Bokeh effect transformation and rendering. We can render Bokeh from all-in-focus images, 
+          or transform the Bokeh of one lens to the effect of another lens without harming the sharp foreground in the image.
+        </p>
+      </td>
+    </tr>
+
+    <!--RTSR 2023-->
+    <tr onmouseout="rtsr_stop()" onmouseover="rtsr_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+
+        <div class="one">
+          <div class="two" id='rtsr_image'>
+            
+            <img src='images/rtsr_after.jpg' width="170">
+          <!--
+            <video  width=100% height=100% muted autoplay loop>
+            <source src="images/nilut.gif" type="video/gif">
+            Your browser does not support the video tag.
+            </video>
+          -->
+          </div>
+          <img src='images/rtsr_before.jpg' width="170">
+        </div>
+        <script type="text/javascript">
+          function rtsr_start() {
+            document.getElementById('rtsr_image').style.opacity = "1";
+          }
+
+          function rtsr_stop() {
+            document.getElementById('rtsr_image').style.opacity = "0";
+          }
+          rtsr_stop()
+        </script>
+
+      </td>
+
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://eduardzamfir.github.io/NTIRE23-RTSR/">
+          <span class="papertitle">
+            Towards real-time 4k image super-resolution</span>
+        </a>
+        <br>
+        <a href="https://scholar.google.com/citations?user=5-FIWKoAAAAJ&hl=en">Eduard Zamfir</a>,
+        <strong>Marcos V. Conde</strong>,
+        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
+        <br>
+        <em>CVPR Workshop</em>, 2023
+        <br>
+        <a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/papers/Zamfir_Towards_Real-Time_4K_Image_Super-Resolution_CVPRW_2023_paper.pdf">paper</a>
+        /
+        <a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Zamfir_Towards_Real-Time_4K_Image_Super-Resolution_CVPRW_2023_paper.html">cvf Proceedings</a>
+        /
+        <a href="https://github.com/eduardzamfir/NTIRE23-RTSR">GitHub</a>
+        <p></p>
+        <p>The paper presents an exhaustive study of baseline methods for real-time SR.
+          <a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/papers/Conde_Efficient_Deep_Models_for_Real-Time_4K_Image_Super-Resolution._NTIRE_2023_CVPRW_2023_paper.pdf">"Efficient Deep Models for Real-Time 4K Image Super-Resolution. NTIRE 2023 Benchmark and Report"</a> gauges the state-of-the-art methods for real-time 4K upscaling 
+          using our new dataset and benchmark protocol. The methods allow 60 FPS and even 120 FPS.
+        </p>
+      </td>
+    </tr>
+
     <!--LPIENET-->
     <tr onmouseout="lpienet_stop()" onmouseover="lpienet_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -520,35 +631,35 @@
     <!-- END PAPERS --->
 
           
-        <!-- OTHER PROJECTS --->
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-            <tr>
-              <td>
-                <h2>Other Projects</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-            <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <a href="images/kuzushiji.jpg"> <img src="images/kuzushiji.jpg" width="100%"> </a>
-              </td>
-              <td width="75%" valign="center">
-                <b>Kuzushiji Recognition (Nov. 2019)</b>
-                <p>
-                  I was invited by Japan’s National Institute of Informatics (NII) and ROIS-DS Center for Open Data in the Humanities (CODH) 
-                  to present a novel solution for the <a href="https://www.kaggle.com/c/kuzushiji-recognition">Kuzushiji Recognition Challenge</a> 
-                  at the Japanese Culture and AI Symposium 2019 in Tokyo.
-                  <br>
-                  <em>Hosts: Dr. Asanobu Kitamoto, Tarin Clanuwat, Alex Lamb.</em>
-                </p>
+    <!-- OTHER PROJECTS --->
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+      <tr>
+        <td>
+          <h2>Other Projects</h2>
+        </td>
+      </tr>
+    </tbody></table>
+    <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <a href="images/kuzushiji.jpg"> <img src="images/kuzushiji.jpg" width="100%"> </a>
+        </td>
+        <td width="75%" valign="center">
+          <b>Kuzushiji Recognition (Nov. 2019)</b>
+          <p>
+            I was invited by Japan’s National Institute of Informatics (NII) and ROIS-DS Center for Open Data in the Humanities (CODH) 
+            to present a novel solution for the <a href="https://www.kaggle.com/c/kuzushiji-recognition">Kuzushiji Recognition Challenge</a> 
+            at the Japanese Culture and AI Symposium 2019 in Tokyo.
+            <br>
+            <em>Hosts: Dr. Asanobu Kitamoto, Tarin Clanuwat, Alex Lamb.</em>
+          </p>
 
-                <a href="https://github.com/mv-lab/kuzushiji-recognition">Solution GitHub</a> &nbsp;/&nbsp;
-                <a href="https://www3.nhk.or.jp/news/special/sci_cul/2019/11/story/story_20191120/index.html">NHK News Report</a> &nbsp;/&nbsp;
-                <a href="images/tokyo_prize.mp4">Awards Ceremony Video</a>
-              </td>
-            </tr>
-          </tbody></table>
+          <a href="https://github.com/mv-lab/kuzushiji-recognition">Solution GitHub</a> &nbsp;/&nbsp;
+          <a href="https://www3.nhk.or.jp/news/special/sci_cul/2019/11/story/story_20191120/index.html">NHK News Report</a> &nbsp;/&nbsp;
+          <a href="images/tokyo_prize.mp4">Awards Ceremony Video</a>
+        </td>
+      </tr>
+    </tbody></table>
 
           <!-- FOOTER --->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
