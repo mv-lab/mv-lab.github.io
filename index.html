@@ -10,6 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    <!-- image -->
+    <meta property="og:image"  content="images/marcosv.jpg">
+    <meta name="twitter:image" content="images/marcosv.jpg">
     
   </head>
 
@@ -95,15 +99,17 @@
                 <h2>Research</h2>
                 <p>
                   My current research interests include neural networks, deep learning, low-level computer vision, inverse problems, computational photography and photorealism.
-                  <em>How can we improve/change/enhance cameras using AI?</em><br>
+                  <em><b>How can we improve/change/enhance cameras and vision using AI?</b> </em><br>
                   Representative papers are <span class="highlight">highlighted</span>.
                 </p>
 
                 <p>
                   (Past/Present) <b>Collaborators:</b> <a href="https://scholar.google.com/citations?user=u3MwH5kAAAAJ">Radu Timofte</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=Gv1QGSMAAAAJ">Michael S. Brown</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=jjF4cMYAAAAJ">Tom E. Bishop</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=gjnuPMoAAAAJ">Javier Vazquez-Corral</a> 
+                  <a href="https://scholar.google.com/citations?user=Gv1QGSMAAAAJ">Michael S. Brown</a> (York University, Samsung) &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=jjF4cMYAAAAJ">Tom E. Bishop</a> (Glass Imaging) &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=gjnuPMoAAAAJ">Javier Vazquez-Corral</a> (CVC, UAB) &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=BM6XOmUAAAAJ">Sira Ferradans</a> (DXOMARK) &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=XgljlGUAAAAJ">Ioannis Katsavounidis</a> (Meta, AOMedia)
                 </p>
 
               </td>
@@ -175,6 +181,52 @@
       </td>
     </tr>        
 
+    <!--SimpleISP-->
+    <tr onmouseout="sisp_stop()" onmouseover="sisp_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='sisp_image'>
+          
+          <img src='images/sisp/20201031-144714_3_6.jpg' width="170">
+          
+          </div>
+
+          <img src='images/sisp/20201031-144714_3_6_raw.jpg' width="170" >
+        </div>
+        
+        <script type="text/javascript">
+          function sisp_start() {
+            document.getElementById('sisp_image').style.opacity = "1";
+          }
+
+          function sisp_stop() {
+            document.getElementById('sisp_image').style.opacity = "0";
+          }
+          sisp_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2404.11569">
+			<span class="papertitle">Simple Image Signal Processing using Global Context Guidance</span>
+        </a>
+        <br>
+        <a href="https://scholar.google.com/citations?user=8v3dYzEAAAAJ&hl=en">Omar Elezabi</a>,
+        <strong>Marcos V. Conde</strong>,
+        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
+        <br>
+        <em>arXiv</em>, 2024
+        <br>
+        <a href="https://arxiv.org/abs/2404.11569">arXiv</a>
+        /
+        <a href="https://github.com/mv-lab/AISP">GitHub</a>
+        <p></p>
+        <p>
+          First, we propose a novel module that can be integrated into any neural ISP to capture the global context information from the full RAW images. 
+          Second, we propose an efficient and simple neural ISP that utilizes our proposed module.
+        </p>
+      </td>
+    </tr>
+
     <!--NILUT-->
     <tr onmouseout="nilut_stop()" onmouseover="nilut_start()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -212,7 +264,7 @@
         <a href="https://scholar.google.com/citations?user=Gv1QGSMAAAAJ">Michael S. Brown</a>,
         <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
         <br>
-        <em>AAAI</em>, 2024
+        <em>AAAI</em>, 2024 &nbsp <font color="red"><strong>(23.75% Acceptance rate)</strong></font>
         <br>
         <a href="https://mv-lab.github.io/nilut/">project page</a>
         /
@@ -229,12 +281,130 @@
       </td>
     </tr>
 
-    <!--BSRAW-->
-    <tr onmouseout="bsraw_stop()" onmouseover="bsraw_start()">
+    <!--RTSR 2024-->
+    <tr onmouseout="piq_stop()" onmouseover="piq_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='images/rtsr24.png' width="170" >
+        </div>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2404.16484">
+			<span class="papertitle">Real-Time 4K Super-Resolution of Compressed AVIF Images. AIS 2024 Challenge Survey</span>
+        </a>
+        <br>
+        <strong>Marcos V. Conde</strong>,
+        Zhijun Lei, Wen Li, Cosmin Stejerean, Ioannis Katsavounidis,
+        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
+        <br>
+        <em>CVPR Workshop</em>, 2024
+        <br>
+        <a href="https://arxiv.org/abs/2404.16484">arXiv</a>
+        /
+        <a href="https://github.com/eduardzamfir/ntire23-rtsr">GitHub</a>
+        <p></p>
+        <p>
+          Collaboration with Meta. This paper introduces a novel benchmark as part of the AIS 2024 Real-Time Image Super-Resolution (RTSR) Challenge, which aims to upscale compressed images from 540p to 4K resolution (4x factor) in real-time on commercial GPUs.
+          The images are compressed using the modern AVIF codec, instead of JPEG.
+        </p>
+      </td>
+    </tr>
 
-        <img src='images/bsraw.png' width="170">
+    <!--PIQ DXO-->
+    <tr onmouseout="piq_stop()" onmouseover="piq_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='images/piq24.png' width="170" >
+        </div>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2404.11159">
+			<span class="papertitle">Deep Portrait Quality Assessment. A NTIRE 2024 Challenge Survey</span>
+        </a>
+        <br>
+        Nicolas Chahine,
+        <strong>Marcos V. Conde</strong>,
+        Daniela Carfora, Gabriel Pacianotto, Benoit Pochon, Sira Ferradans,
+        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
+        <br>
+        <em>CVPR Workshop</em>, 2024
+        <br>
+        <a href="https://arxiv.org/abs/2404.11159">arXiv</a>
+        /
+        <a href="https://github.com/dxomark-research/piq2023">GitHub</a>
+        <p></p>
+        <p>
+          Collaboration with DXOMARK. This paper reviews the NTIRE 2024 Portrait Quality Assessment Challenge, highlighting the proposed solutions and results. 
+          This challenge aims to obtain an efficient deep neural network capable of estimating the perceptual quality of real portrait photos.
+        </p>
+      </td>
+    </tr>
 
+    <!--BSRAW Challenge-->
+    <tr onmouseout="bsrawc_stop()" onmouseover="bsrawc_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='bsrawc_image'>
+            
+            <img src='images/bsraw/gt_crop_190.png' width="170" height="150">
+
+          </div>
+          <img src='images/bsraw/in_crop_190.png' width="170" height="150">
+        </div>
+        <script type="text/javascript">
+          function bsrawc_start() {
+            document.getElementById('bsrawc_image').style.opacity = "1";
+          }
+
+          function bsrawc_stop() {
+            document.getElementById('bsrawc_image').style.opacity = "0";
+          }
+          bsrawc_stop()
+        </script>
+      </td>
+
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://github.com/mv-lab/AISP">
+          <span class="papertitle">Deep RAW Image Super-Resolution. A NTIRE 2024 Challenge Survey</span>
+        </a>
+        <br>
+        <strong>Marcos V. Conde</strong>,
+        <a href="https://scholar.google.com/citations?hl=es&user=kHHzuyoAAAAJ">Florin Vasluianu</a>,
+        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
+        <br>
+        <em>CVPR Workshop</em>, 2024
+        <br>
+        <a href="https://arxiv.org/abs/2404.16223">arXiv</a>
+        /
+        <a href="https://github.com/mv-lab/AISP">GitHub</a>
+        <p></p>
+        <p>New methods for RAW Super-Resolution could be essential in modern Image Signal Processing (ISP) pipelines, however, this problem is not as explored as in the RGB domain. 
+          The goal of this challenge is to upscale RAW Bayer images by 2x, considering unknown degradations such as noise and blur.
+        </p>
+      </td>
+    </tr>
+
+    <!--BSRAW-->
+    <tr onmouseout="bsraw_stop()" onmouseover="bsraw_start()" bgcolor="#ffffd0">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='bsraw_image'>
+            
+            <img src='images/bsraw/gt_crop_177.png' width="170" height="150">
+
+          </div>
+          <img src='images/bsraw/in_crop_177.png' width="170" height="150">
+        </div>
+        <script type="text/javascript">
+          function bsraw_start() {
+            document.getElementById('bsraw_image').style.opacity = "1";
+          }
+
+          function bsraw_stop() {
+            document.getElementById('bsraw_image').style.opacity = "0";
+          }
+          bsraw_stop()
+        </script>
       </td>
 
       <td style="padding:20px;width:75%;vertical-align:middle">
@@ -348,7 +518,7 @@
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://eduardzamfir.github.io/NTIRE23-RTSR/">
           <span class="papertitle">
-            Towards real-time 4k image super-resolution</span>
+            Towards Real-Time 4K Image Super-Resolution</span>
         </a>
         <br>
         <a href="https://scholar.google.com/citations?user=5-FIWKoAAAAJ&hl=en">Eduard Zamfir</a>,
@@ -363,15 +533,48 @@
         /
         <a href="https://github.com/eduardzamfir/NTIRE23-RTSR">GitHub</a>
         <p></p>
-        <p>The paper presents an exhaustive study of baseline methods for real-time SR.
-          <a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/papers/Conde_Efficient_Deep_Models_for_Real-Time_4K_Image_Super-Resolution._NTIRE_2023_CVPRW_2023_paper.pdf">"Efficient Deep Models for Real-Time 4K Image Super-Resolution. NTIRE 2023 Benchmark and Report"</a> gauges the state-of-the-art methods for real-time 4K upscaling 
-          using our new dataset and benchmark protocol. The methods allow 60 FPS and even 120 FPS.
+        <p>The paper presents an exhaustive study of baseline methods for real-time image SR. The methods allow 60 FPS and even 120 FPS.
+        </p>
+      </td>
+    </tr>
+
+    <!--RTSR 2023-->
+    <tr onmouseout="rtsrc_stop()" onmouseover="rtsrc_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+
+        <div class="one">
+          <img src='images/super-res.png' width="170">
+        </div>
+
+      </td>
+
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://eduardzamfir.github.io/NTIRE23-RTSR/">
+          <span class="papertitle">
+            Efficient Deep Models for Real-Time 4K Image Super-Resolution. NTIRE 2023 Benchmark and Report</span>
+        </a>
+        <br>
+        <strong>Marcos V. Conde</strong>,
+        <a href="https://scholar.google.com/citations?user=5-FIWKoAAAAJ&hl=en">Eduard Zamfir</a>,
+        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
+        <br>
+        <em>CVPR Workshop</em>, 2023
+        <br>
+        <a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/papers/Conde_Efficient_Deep_Models_for_Real-Time_4K_Image_Super-Resolution._NTIRE_2023_CVPRW_2023_paper.pdf">paper</a>
+        /
+        <a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/papers/Conde_Efficient_Deep_Models_for_Real-Time_4K_Image_Super-Resolution._NTIRE_2023_CVPRW_2023_paper.pdf">cvf Proceedings</a>
+        /
+        <a href="https://github.com/eduardzamfir/NTIRE23-RTSR">GitHub</a>
+        <p></p>
+        <p>The paper gauges the state-of-the-art methods for real-time 4K upscaling 
+          using our new dataset and benchmark protocol. Ovr 100 participants joined the challenge and 15 teams proposed diverse solutions.
+          The methods allow 60 FPS and even 120 FPS on regular GPUs.
         </p>
       </td>
     </tr>
 
     <!--LPIENET-->
-    <tr onmouseout="lpienet_stop()" onmouseover="lpienet_start()">
+    <tr onmouseout="lpienet_stop()" onmouseover="lpienet_start()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
 
         <div class="one">
@@ -411,7 +614,7 @@
         <a href="https://scholar.google.com/citations?user=gjnuPMoAAAAJ">Javier Vazquez-Corral</a>,
         <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
         <br>
-        <em>WACV</em>, 2023
+        <em>WACV</em>, 2023 &nbsp <font color="red"><strong>(Oral Presentation, Spotlight)</strong></font>
         <br>
         <a href="https://arxiv.org/abs/2210.13552">arXiv</a>
         /
@@ -426,7 +629,7 @@
     </tr>
 
     <!--SWIN2SR-->
-    <tr onmouseout="swin2sr_stop()" onmouseover="swin2sr_start()">
+    <tr onmouseout="swin2sr_stop()" onmouseover="swin2sr_start()"  bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
 
         <div class="one">
@@ -637,17 +840,20 @@
           <h2>Academic Service</h2>
 
           <p>
-            <b> <em>Reviewer:</em> </b> CVPR 2022/2023, ECCV 2022/2024, ICCV 2023, AAAI 2023, SIGGRAPH 2024, ACCV 2024, IEEE Transactions on Image Processing, IEEE Transactions on Computational Imaging
+            <b> <em>Teaching:</em> </b> Image Processing and Computational Photography (IPCP), Computer Vision
           </p>
 
+
           <p>
-            <b> <em>Teaching:</em> </b> Image Processing and Computational Photography (IPCP), Computer Vision
+            <b> <em>Reviewer:</em> </b> CVPR 2022-2024, ECCV 2022/24, ICCV 2023, AAAI 2023/24, SIGGRAPH 2024, ACCV 2024, IEEE Transactions on Image Processing, IEEE Transactions on Computational Imaging
           </p>
 
           <p>
             <b> <em>Workshops:</em> </b> 
-            <a href="https://ai4streaming-workshop.github.io/">AI4Streaming CVPR</a> &nbsp;/&nbsp;
-            <a href="https://cvlai.net/ntire/2024/">NTIRE 2024 CVPR</a> &nbsp;/&nbsp;
+            <a href="https://cvlai.net/ntire/2024/">AIM 2024 ECCV</a> &nbsp;/&nbsp;
+            <a href="https://ai4streaming-workshop.github.io/"> <b>AI for Streaming (AIS 2024) CVPR</b> </a> &nbsp;/&nbsp;
+            <a href="https://cvlai.net/ntire/2024/">NTIRE 2024 CVPR</a> &nbsp;/&nbsp; 
+            <a href="https://www.vqeg.org/meetings-home/">VQEG 2023</a> &nbsp;/&nbsp; 
             <a href="https://cvlai.net/ntire/2023/">NTIRE 2023 CVPR</a> &nbsp;/&nbsp;
             <a href="https://data.vision.ee.ethz.ch/cvl/aim22/">AIM 2022 ECCV</a>
           </p>
@@ -669,7 +875,7 @@
     <table width="100%" align="center" border="0" cellpadding="20"><tbody>
       <tr>
         <td style="padding:20px;width:25%;vertical-align:middle">
-          <a href="https://h2o.ai/"> <img src="images/h2ogpt.jpg" width="100%"> </a>
+          <a href="https://h2o.ai/"> <img src="images/h2ogpt.gif" width="100%"> </a>
         </td>
         <td width="75%" valign="center">
           <b>H2O Open Ecosystem for LLMs</b>
@@ -677,15 +883,61 @@
             We introduce a complete open-source ecosystem for developing and testing LLMs. 
             The goal of this project is to boost open alterna- tives to closed-source approaches.
             <br>
-            <em>Authors: Arno Candel, Jon McKinney, Philipp Singer, Pascal Pfeiffer, Maximilian Jeblick, Chun Ming Lee, Marcos V. Conde.</em>
+            <em>Authors: Arno Candel, Jon McKinney, Philipp Singer, Pascal Pfeiffer, Maximilian Jeblick, Chun Ming Lee, <b>Marcos V. Conde</b></em>
           </p>
 
           <a href="https://aclanthology.org/2023.emnlp-demo.6.pdf"> ACL EMNLP Proceedings</a> &nbsp;/&nbsp;
-          <a href="https://gpt.h2o.ai/"> free Demo</a> &nbsp;/&nbsp;
+          <a href="https://gpt.h2o.ai/"> Demo</a> &nbsp;/&nbsp;
           <a href="https://github.com/h2oai/h2ogpt">GitHub</a>
         </td>
       </tr>
     </tbody></table>
+
+    <!--Autonomous Driving-->
+    <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <img src="images/mp-av.gif" width="100%">
+        </td>
+        <td width="75%" valign="center">
+          <b>Motion Prediction for Autonomous Driving</b>
+          <p>
+            We proposed multiple methods for motion prediction in Autonomous Driving. 
+            The methods were presented at CVPR Workshops, ICRA, and IEEE Transactions on Intelligent Transportation Systems (T-ITS, Q1, IF:8.5).
+            <br>
+            <em>Authors: Carlos Gómez-Huélamo, <b>Marcos V. Conde</b></em>
+          </p>
+
+          <a href="https://ieeexplore.ieee.org/document/10352999"> IEEE Journal</a> &nbsp;/&nbsp;
+          <a href="https://ieeexplore.ieee.org/document/10208487"> CVPRW</a> &nbsp;/&nbsp;
+          <a href="https://github.com/Cram3r95/mapfe4mp">GitHub</a>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <!--EyeT-->
+    <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2404.11770"> <img src="images/3et_demo_low_res.gif" width="100%"> </a>
+        </td>
+        <td width="75%" valign="center">
+          <b>Event-Based Eye Tracking - AIS Challenge CVPR 2024 </b>
+          <p>
+            This survey reviews the AIS 2024 Event-Based Eye Tracking (EET) Challenge. The task of the challenge focuses on processing eye movement recorded with event cameras and predicting the pupil center of the eye. 
+            <br>
+            <em>Authors: Zuowen Wang, Chang Gao, Zongwei Wu, <b>Marcos V. Conde</b>, Radu Timofte, Shih-Chii Liu, Qinyu Chen</em>
+          </p>
+
+          <a href="https://arxiv.org/abs/2404.11770">arXiv</a> &nbsp;/&nbsp;
+          <a href="https://www.kaggle.com/competitions/event-based-eye-tracking-ais2024"> Kaggle</a> &nbsp;/&nbsp;
+          <a href="https://github.com/EETChallenge/challenge_demo_code">GitHub</a> &nbsp;/&nbsp;
+          <a href="https://eetchallenge.github.io/EET.github.io/">Project</a>
+
+        </td>
+      </tr>
+    </tbody></table>
+
 
     <!--KUZUSHIJI-->
     <table width="100%" align="center" border="0" cellpadding="20"><tbody>
@@ -700,10 +952,10 @@
             to present a novel solution for the <a href="https://www.kaggle.com/c/kuzushiji-recognition">Kuzushiji Recognition Challenge</a> 
             at the Japanese Culture and AI Symposium 2019 in Tokyo.
             <br>
-            <em>Hosts: Dr. Asanobu Kitamoto, Tarin Clanuwat, Alex Lamb.</em>
+            <em>Organizers: Dr. Asanobu Kitamoto, Tarin Clanuwat, Alex Lamb.</em>
           </p>
 
-          <a href="https://github.com/mv-lab/kuzushiji-recognition">Solution GitHub</a> &nbsp;/&nbsp;
+          <a href="https://github.com/mv-lab/kuzushiji-recognition">GitHub</a> &nbsp;/&nbsp;
           <a href="https://www3.nhk.or.jp/news/special/sci_cul/2019/11/story/story_20191120/index.html">NHK News Report</a> &nbsp;/&nbsp;
           <a href="images/tokyo_prize.mp4">Awards Ceremony Video</a>
         </td>
