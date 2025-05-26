@@ -1,3 +1,54 @@
+/* phone view */
+@media screen and (max-width: 768px) {
+  table, tbody, tr, td {
+    display: block;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  td img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.profile-pic {
+  width: 210px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+
+/* NEWS*/
+.news-scroll {
+  max-height: 9rem;    /* roughly height for 3 news items */
+  overflow-y: auto;
+  padding-right: 0.5rem; /* avoid cutting off text under scrollbar */
+  box-sizing: content-box;
+}
+
+/* Preserve original paragraph spacing */
+.news-scroll p {
+  margin: 1rem 0;
+}
+
+/* Optional: subtle scrollbar styling */
+.news-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.news-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+.news-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0,0,0,0.4);
+}
+
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
