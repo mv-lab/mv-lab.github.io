@@ -20,8 +20,8 @@
     .pill-container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
-      margin: 20px;
+      justify-content: flex-start;
+      margin: 10px;
     }
 
     .pill {
@@ -30,6 +30,14 @@
       cursor: pointer;
       transition: background-color 0.3s;
       text-align: center;
+      width: 195px;
+      height: 210px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 10px;
     }
 
     .pill:hover {
@@ -37,8 +45,9 @@
     }
 
     .thumbnail {
-      max-width: 160px;
-      height: auto;
+      width: 160px;
+      height: 120px;
+      object-fit: cover;
       transition: filter 0.3s;
     }
 
@@ -48,7 +57,7 @@
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
 
@@ -60,9 +69,10 @@
                   Marcos V. Conde
                 </p>
 
-                <p>I'm a PhD Researcher in Artificial Intelligence and Computer Vision at the University of Würzburg, advised by <a href="https://scholar.google.com/citations?user=u3MwH5kAAAAJ">Prof. Radu Timofte</a>. 
-                  Part of my work is supported by <a href="https://sonyinteractive.com/en/news/blog/the-visual-computing-group-vcg-is-happy-to-present-the-1st-ais-vision-graphics-and-ai-for-streaming-workshop-at-cvpr-2024/">Sony PlayStation</a> where I'm a Computer Vision Researcher working on Super-Resolution and Rendering. 
-                  I'm also Senior Data Scientist and Kaggle Grandmaster at <a href="https://h2o.ai/">H2O.ai</a> working on LLMs.
+                <p>I'm a Ph.D. Candidate in Artificial Intelligence and Computer Vision at the University of Würzburg, advised by <a href="https://scholar.google.com/citations?user=u3MwH5kAAAAJ">Prof. Radu Timofte</a>. 
+                  Part of my work is supported by <a href="https://sonyinteractive.com/en/news/blog/the-visual-computing-group-vcg-is-happy-to-present-the-1st-ais-vision-graphics-and-ai-for-streaming-workshop-at-cvpr-2024/">Sony PlayStation</a> where I'm a Computer Vision Scientist working on Super-Resolution and AI Graphics Enhancement (like NVIDIA DLSS). 
+                  <br>
+                  I'm also Kaggle Grandmaster at <a href="https://h2o.ai/">H2O.ai</a> working on LLMs and having fun.
                 </p>
 
                 
@@ -70,10 +80,12 @@
                 </p>
 
                 <p>I received my M.Sc. in Computer Vision from the Autonomous University of Barcelona (UAB) with honours for my work on <a href="https://openaccess.thecvf.com/content/WACV2023/html/Conde_Perceptual_Image_Enhancement_for_Smartphone_Real-Time_Applications_WACV_2023_paper.html"> <em>Real-time Photography Enhancement</em> </a>
-                  with <a href="https://scholar.google.com/citations?user=Gv1QGSMAAAAJ">Michael S. Brown</a> and <a href="https://scholar.google.com/citations?user=gjnuPMoAAAAJ">Javi Vazquez-Corral</a>.
+                  advised by <a href="https://scholar.google.com/citations?user=gjnuPMoAAAAJ">Javier Vazquez-Corral</a> and <a href="https://scholar.google.com/citations?user=Gv1QGSMAAAAJ">Michael S. Brown</a>.
                 <br>
                 <br>
-                I lead a team of students at <a href="https://cidaut.es/">CIDAUT</a> (Spain) working on next-gen cameras.
+                I lead a team of students at <a href="https://cidaut.ai/">CIDAUT AI</a> (Spain) working on cameras for robots!<br>
+                (Siempre apoyamos a investigadores y estudiantes interesados en resolver problemas reales de visión artificial con IA, el equipo sigue creciendo :)
+                <br>
                 <br>
                 Feel free to contact me at marcos.conde[at]uni-wuerzburg.de
                 </p>
@@ -116,6 +128,14 @@
                   <!-- Wrap only the news paragraphs in a scrollable div -->
                   <div class="news-scroll">
 
+                    <p>
+                      <code>[July 2025]</code> I host <a href="https://mv-lab.github.io/neuralisp-iccv25/">A Tour Through AI-powered Photography and Imaging</a>, Tutorial at ICCV 2025 📸🌴🌊
+                    </p>
+
+                    <p>
+                      <code>[July 2025]</code> 📷 2 papers accepted at ICCV 2025: <a href="https://arxiv.org/abs/2503.16067">"Bokehlicious: Photorealistic Bokeh Rendering with Controllable Apertures"</a> and "<b>PixTalk</b>: Controlling Photorealistic Image Processing and Editing with Language"
+                    </p>
+                    
                     <p>
                       <code>[May 2025]</code> I organize the <a href="https://ai4streaming-workshop.github.io/">2nd AIGENS Workshop</a> (2nd Workshop on <b>AI</b> for Content <b>Gen</b>eration, Quality <b>En</b>hancement and <b>S</b>treaming) at ICCV 2025 🌴🌅🌊
                     </p>
@@ -170,19 +190,24 @@
 
         <div class="pill-container">
         <div class="pill">
-          <a href="https://sonyinteractive.com/en/news/blog/the-visual-computing-group-vcg-is-happy-to-present-the-1st-ais-vision-graphics-and-ai-for-streaming-workshop-at-cvpr-2024/"><img class="thumbnail" src="images/sony_cvpr24.jpeg" alt="sony"></a>
-          <p><a href="https://sonyinteractive.com/en/news/blog/the-visual-computing-group-vcg-is-happy-to-present-the-1st-ais-vision-graphics-and-ai-for-streaming-workshop-at-cvpr-2024/">
-            <papertitle>Work at Sony PlayStation</papertitle></a><br>Visual Computing Group</p>
+          <a href="https://mv-lab.github.io/neuralisp-iccv25/"><img class="thumbnail" src="neuralisp-iccv25/imgs/banner.png" alt="neuralISP-ICCV25"></a>
+          <p><a href="https://mv-lab.github.io/neuralisp-iccv25/"><papertitle>A Tour Through AI-powered Photography and Imaging</papertitle></a><br>ICCV Workshop</p>
         </div>
 
         <div class="pill">
           <a href="https://ai4streaming-workshop.github.io/"><img class="thumbnail" src="images/ais_cvpr24.jpg" alt="ais"></a>
-          <p><a href="https://ai4streaming-workshop.github.io/"><papertitle>AI for Streaming</papertitle></a><br>CVPR Workshop</p>
+          <p><a href="https://ai4streaming-workshop.github.io/"><papertitle>AI for Streaming</papertitle></a><br>AIGENS Workshop</p>
         </div>
 
         <div class="pill">
           <a href="https://github.com/mv-lab/InstructIR"><img class="thumbnail" src="images/instructir.gif" alt="InstructIR Highlight"></a>
           <p><a href="https://github.com/mv-lab/InstructIR"><papertitle>InstructIR</papertitle></a><br>ECCV 2024</p>
+        </div>
+
+        <div class="pill">
+          <a href="https://sonyinteractive.com/en/news/blog/the-visual-computing-group-vcg-is-happy-to-present-the-1st-ais-vision-graphics-and-ai-for-streaming-workshop-at-cvpr-2024/"><img class="thumbnail" src="images/sony_cvpr24.jpeg" alt="sony"></a>
+          <p><a href="https://sonyinteractive.com/en/news/blog/the-visual-computing-group-vcg-is-happy-to-present-the-1st-ais-vision-graphics-and-ai-for-streaming-workshop-at-cvpr-2024/">
+            <papertitle>Me at Sony PlayStation</papertitle></a><br>AI Graphics Enhancement</p>
         </div>
 
         </div>
@@ -193,13 +218,15 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  My current research interests include neural networks, deep learning, low-level computer vision, inverse problems, computational photography and imaging.
-                  <em><b>How can we change/enhance cameras and visual perception using AI?</b> </em><br>
-                  Representative papers are <span class="highlight">highlighted</span>.
+                  My current research interests include deep learning, low-level computer vision, vision-language models, and computational photography.
+                  <br>
+                  <em><b>My research aims to achieve real AI Visual Intelligence and Super-human perception.</b> I replace the eyes with cameras and the brain with a computer.</em>
+                  <br>
+                  Representative papers are <span class="highlight">highlighted</span> -- check my <a href="https://scholar.google.com/citations?user=NtB1kjYAAAAJ&hl=en">Google Scholar</a> to see the complete list.
                 </p>
 
                 <p>
-                  <b>Collabs:</b> <a href="https://scholar.google.com/citations?user=u3MwH5kAAAAJ">Radu Timofte</a> (爸爸) &nbsp;/&nbsp;
+                  <b>People:</b> <a href="https://scholar.google.com/citations?user=u3MwH5kAAAAJ">Radu Timofte</a> (爸爸) &nbsp;/&nbsp;
                   <a href="https://scholar.google.com/citations?user=Gv1QGSMAAAAJ">Michael S. Brown</a> (York University, VP Samsung) &nbsp;/&nbsp;
                   <a href="https://scholar.google.com/citations?user=jjF4cMYAAAAJ">Tom Bishop</a> (CEO, Glass Imaging) &nbsp;/&nbsp;
                   <a href="https://scholar.google.com/citations?user=gjnuPMoAAAAJ">Javier Vazquez-Corral</a> (CVC, UAB) &nbsp;/&nbsp;
@@ -215,7 +242,47 @@
           <!--PAPERS-->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 	
-	
+    
+    <!--Extreme Compression of Adaptive Neural Images-->
+    <tr onmouseout="ani_stop()" onmouseover="ani_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='ani_image'>
+          
+          <img src='images/kodim13.png' width="170">
+          
+          </div>
+
+          <img src='images/kodim13_compress.jpg' width="170" >
+        </div>
+        
+        <script type="text/javascript">
+          function ani_start() {
+            document.getElementById('ani_image').style.opacity = "1";
+          }
+
+          function ani_stop() {
+            document.getElementById('ani_image').style.opacity = "0";
+          }
+          ani_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2405.16807">
+			<span class="papertitle">Extreme Compression of Adaptive Neural Images</span>
+        </a>
+        <br>
+        Leo Hoshikawa*, <strong>Marcos V. Conde*</strong>, Takeshi Ohashi, Atsushi Irie
+        <br>
+        <em>ICCV Workshop</em>, 2025
+        <br>
+        <a href="https://arxiv.org/abs/2405.16807">arXiv</a>
+        <p></p>
+        <p>
+          We present a novel analysis on compressing neural fields, with the focus on images. We also introduce Adaptive Neural Images (ANI), an efficient neural representation that enables adaptation to different inference or transmission requirements.
+        </p>
+      </td>
+    </tr>	
 
     <!--DarkIR-->
     <tr onmouseout="darkir_stop()" onmouseover="darkir_start()" bgcolor="#ffffd0">
@@ -330,48 +397,6 @@
         </p>
       </td>
     </tr>        
-
-
-    <!--Extreme Compression of Adaptive Neural Images-->
-    <tr onmouseout="ani_stop()" onmouseover="ani_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='ani_image'>
-          
-          <img src='images/kodim13.png' width="170">
-          
-          </div>
-
-          <img src='images/kodim13_compress.jpg' width="170" >
-        </div>
-        
-        <script type="text/javascript">
-          function ani_start() {
-            document.getElementById('ani_image').style.opacity = "1";
-          }
-
-          function ani_stop() {
-            document.getElementById('ani_image').style.opacity = "0";
-          }
-          ani_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2405.16807">
-			<span class="papertitle">Extreme Compression of Adaptive Neural Images</span>
-        </a>
-        <br>
-        Leo Hoshikawa*, <strong>Marcos V. Conde*</strong>, Takeshi Ohashi, Atsushi Irie
-        <br>
-        <em>arXiv</em>, 2024
-        <br>
-        <a href="https://arxiv.org/abs/2405.16807">arXiv</a>
-        <p></p>
-        <p>
-          We present a novel analysis on compressing neural fields, with the focus on images. We also introduce Adaptive Neural Images (ANI), an efficient neural representation that enables adaptation to different inference or transmission requirements.
-        </p>
-      </td>
-    </tr>
 
     <!--Streaming Neural Images-->
     <tr onmouseout="sni_stop()" onmouseover="sni_start()">

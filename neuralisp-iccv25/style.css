@@ -1,0 +1,227 @@
+* { box-sizing: border-box; margin:0; padding:0; }
+body { font-family: Arial, sans-serif; line-height:1.6; color:#222; background: #f7f9fb; }
+a { color:#007acc; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+
+
+header.hero-banner {
+    background: none;
+    height: auto;
+    padding: 0;
+}
+.banner-img-wrap {
+    position: relative;
+    width: 100%;
+    max-height: 320px;
+    overflow: hidden;
+}
+.banner-img {
+    width: 100vw;
+    max-width: 100vw;
+    height: 240px;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0 0 12px 12px;
+}
+.hero-title {
+    position: absolute;
+    left: 0; right: 0; top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    text-shadow: 0 2px 12px #000, 0 1px 8px #fff;
+    background: rgba(0,0,0,0.10);
+    padding: 1.2em 0 1.2em 0;
+}
+.hero-title h1 {
+    font-size: 2.6em;
+    margin: 0;
+    color: #fffde7;
+    text-shadow: 0 2px 8px #000, 0 1px 4px #fff, 0 0 8px #ffe066;
+}
+.hero-title .subtitle {
+    color: #fff;
+    font-size: 1em;
+    margin-top: 0.5em;
+    text-shadow: 0 1px 2px #000, 0 0 6px #ffe066, 0 0 2px #ffe066;
+}
+
+
+.container {
+    max-width: 850px;
+    margin: 2em auto;
+    padding: 0 1em;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+.container h2 {
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid #007acc;
+    padding-bottom: 0.2em;
+    color: #3949ab;
+}
+
+
+/* Tutorial Parts Horizontal */
+.tutorial-parts-horizontal {
+    width: 100%;
+    margin: 2em 0 2em 0;
+}
+/* Larger tutorial parts */
+.tutorial-row.large {
+    display: flex;
+    align-items: center;
+    gap: 2.2em;
+    margin: 2.2em 0;
+}
+.tutorial-figure img {
+    width: 220px;
+    height: 140px;
+    max-width: 90vw;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(30,40,90,0.13);
+}
+.tutorial-text {
+    font-size: 1.08em;
+    color: #1a237e;
+    line-height: 1.7;
+    max-width: 600px;
+}
+.tutorial-text .part-title {
+    font-size: 1.45em;
+    font-weight: bold;
+    color: #1a237e;
+    display: block;
+    margin-bottom: 0.2em;
+}
+.tutorial-text span {
+    color: #444;
+    font-size: 1em;
+}
+hr {
+    border: none;
+    border-top: 1.5px solid #e3e6f0;
+    margin: 0.7em 0;
+}
+
+/* Schedule Table */
+.schedule-table {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 1.5em;
+}
+.schedule-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f7f9fb;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.schedule-table th, .schedule-table td {
+    padding: 0.6em 1.2em;
+    border-bottom: 1px solid #e3e6f0;
+    text-align: left;
+}
+.schedule-table th {
+    background: #e3e6f0;
+    color: #1a237e;
+}
+.schedule-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Team Section */
+.team-section .team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+.team-member {
+    width: 150px;
+    text-align: center;
+}
+.team-member img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px rgba(30,40,90,0.09);
+}
+.team-member h3 {
+    margin: 0.5em 0 0.2em;
+    font-size: 1.1em;
+    color: #1a237e;
+}
+.team-member p {
+    font-size: 0.97em;
+    color: #444;
+}
+.team-member a {
+    font-size: 0.95em;
+    color: #007acc;
+    word-break: break-all;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #e3e6f0;
+    color: #555;
+    font-size: 0.95em;
+    border-top: 1px solid #c5cae9;
+    margin-top: 2rem;
+}
+
+
+@media (max-width: 900px) {
+    .tutorial-row.large {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.2em;
+    }
+    .tutorial-figure img {
+        width: 100%;
+        height: auto;
+        max-width: 98vw;
+    }
+    .hero-title h1 {
+        font-size: 1.1em;
+    }
+    .team-section .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-img {
+        height: 120px;
+        max-width: 100vw;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0 0.3em;
+    }
+    .hero-title h1 {
+        font-size: 1em;
+    }
+    .tutorial-text {
+        font-size: 1em;
+    }
+    .tutorial-figure img {
+        max-width: 99vw;
+    }
+    .banner-img {
+        height: 80px;
+        max-width: 100vw;
+        object-fit: cover;
+    }
+}

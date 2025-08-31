@@ -1,3 +1,21 @@
+/* Highlight pill blocks: fixed size and image fit */
+.pill {
+  width: 200px;
+  height: 260px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px;
+}
+
+.thumbnail {
+  width: 160px;
+  height: 120px;
+  object-fit: cover;
+  transition: filter 0.3s;
+}
 /* phone view */
 @media screen and (max-width: 768px) {
   table, tbody, tr, td {
@@ -25,7 +43,7 @@
 
 /* NEWS*/
 .news-scroll {
-  max-height: 9rem;    /* roughly height for 3 news items */
+  max-height: 10rem;    /* roughly height for 3 news items */
   overflow-y: auto;
   padding-right: 0.5rem; /* avoid cutting off text under scrollbar */
   box-sizing: content-box;
