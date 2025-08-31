@@ -43,7 +43,7 @@
 
 /* NEWS*/
 .news-scroll {
-  max-height: 10rem;    /* roughly height for 3 news items */
+  max-height: 12rem;    /* roughly height for 3 news items */
   overflow-y: auto;
   padding-right: 0.5rem; /* avoid cutting off text under scrollbar */
   box-sizing: content-box;
