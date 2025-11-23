@@ -28,16 +28,17 @@ Marcos V. Conde is among the Top 130 researchers in Computer Vision in Spain
 """
 - bio:"""
 Marcos V. Conde is a Ph.D. researcher in Artificial Intelligence and Computer Vision at the University of Würzburg, Germany, advised by Prof. Dr. Radu Timofte.
-He is also Kaggle Grandmaster at H2O AI, Principal Investigator (PI) at Fundación CIDAUT AI, and a prolific inventor. 
+He is also Kaggle Grandmaster at H2O AI, Chief Scientific Advisor at Fundación CIDAUT AI, and a prolific inventor. 
 
-He received the M.Sc. in Computer Vision from the Autonomous University of Barcelona (UAB) in 2022.
-From 2022 to 2025, he was a Computer Vision Scientist at Sony PlayStation leading research on neural video processing, super-resolution, AI graphics enhancement, and streaming. 
-Previously, he was a Research Intern at Huawei Noah's Ark Lab London (2020-2021), working on low-level computer vision and image signal processors, and he received the best intern award.
+He received the M.Sc. in Computer Vision from the Autonomous University of Barcelona (UAB) in 2022 with with honours for his work on Real-time Photography Enhancement advised by Javier Vazquez-Corral and Michael S. Brown.
 
-He is Co-organizer of the "New Trends in Image Restoration and Enhancement (NTIRE)" Workshop at CVPR 2023/2024/2025. 
-He is also Co-organizer of the "Advances in Image Manipulation (AIM)" Workshop at ECCV 2022/2024 and ICCV 2025. 
+From 2022 to 2025, he was a Computer Vision Scientist at Sony PlayStation leading research on neural rendering, super-resolution, AI graphics enhancement, and streaming. 
+Previously, during 2020-2021, he was a Research Intern at Huawei Noah's Ark Lab London, working on low-level computer vision and image signal processors, and he received the best intern award.
+
 He is Organizer of the "AI for Content Generation, Quality Enhancement and Streaming (AIGENS)" Workshop at CVPR 2024 and ICCV 2025. 
 He is Organizer of the "Smart Cameras for Smarter Autonomous Vehicles and Robots" Workshop at BMVC 2025. 
+He is Co-organizer of the "New Trends in Image Restoration and Enhancement (NTIRE)" Workshop at CVPR 2023/2024/2025. 
+He is also Co-organizer of the "Advances in Image Manipulation (AIM)" Workshop at ECCV 2022/2024 and ICCV 2025. 
 He also hosted the Tutorial "A Tour Through AI-powered Photography and Imaging" at ICCV 2025.
 
 He serves as a Reviewer for top conferences and journals such as CVPR, ECCV, ICCV, WACV, AAAI, NeurIPS, IEEE Transactions on Image Processing, IEEE Transactions on Computational Imaging, and IEEE Transactions on Pattern Analysis and Machine Intelligence. He was Outstanding Reviewer at ECCV 2024.
