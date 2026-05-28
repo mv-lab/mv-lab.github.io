@@ -5,321 +5,345 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <title>Marcos V. Conde</title>
-    <meta name="description" content="Ph.D. Doctoral Researcher in Artificial Intelligence (AI) doing science at Sony PlayStation. Senior Data Scientist and Kaggle Grandmaster at H2O.AI.">
+    <meta name="description" content="Marcos V. Conde — Ph.D. in Computer Science. Research on visual intelligence, computational photography, and image restoration. Kaggle Grandmaster.">
     <meta name="author" content="Marcos V. Conde">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+/* Layout fallback when stylesheet.css does not load (common with file://) */
+:root { --bg: #faf9f7; }
+body { margin: 0; background: var(--bg); }
+.site-grid {
+  display: grid;
+  grid-template-columns: 228px minmax(0, 1fr);
+  column-gap: 5.25rem;
+  align-items: start;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 4.75rem 2.25rem 4rem;
+}
+.site-sidebar { grid-column: 1; width: 228px; }
+.site-main { grid-column: 2; min-width: 0; }
+@media (max-width: 420px) {
+  .site-grid { grid-template-columns: 1fr; row-gap: 2.5rem; }
+  .site-sidebar, .site-main { grid-column: 1; }
+  .site-sidebar { width: 100%; max-width: 280px; }
+}
+@media (min-width: 421px) {
+  .site-sidebar {
+    position: sticky;
+    top: 2rem;
+    max-height: none;
+    overflow: visible;
+  }
+}
+    </style>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
     <!-- image -->
-    <meta property="og:image"  content="images/marcosv.jpg">
-    <meta name="twitter:image" content="images/marcosv.jpg">
-
-    <style>
-
-    .pill-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      margin: 10px;
-    }
-
-    .pill {
-      border: 1px solid #ddd;
-      padding: 10px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      text-align: center;
-      width: 195px;
-      height: 210px;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      margin: 10px;
-    }
-
-    .pill:hover {
-      background-color: #f1f1f1;
-    }
-
-    .thumbnail {
-      width: 160px;
-      height: 120px;
-      object-fit: cover;
-      transition: filter 0.3s;
-    }
-
-
-  </style>
+    <meta property="og:image" content="https://mv-lab.github.io/images/marcosv.jpg">
+    <meta name="twitter:image" content="https://mv-lab.github.io/images/marcosv.jpg">
     
   </head>
 
   <body>
-    <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
+    <div class="site">
+      <div class="site-grid">
 
-          <!--BIO-->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                  Marcos V. Conde
-                </p>
+        <aside class="site-sidebar">
+          <img src="images/marcosv.jpg" alt="Marcos V. Conde" class="profile-photo" width="220" height="220">
+          <h1 class="name">Marcos V. Conde</h1>
+          <p class="profile-role">Ph.D. in Computer Science</p>
+          <p class="profile-venture-line">Photography - Building Stuff</p>
+          <nav class="profile-nav" aria-label="Contact and profiles">
+            <a href="https://scholar.google.com/citations?hl=en&amp;user=NtB1kjYAAAAJ">Google Scholar</a>
+            <a href="https://github.com/mv-lab">GitHub</a>
+            <a href="https://www.kaggle.com/jesucristo">Kaggle</a>
+            <a href="https://medium.com/@drmarcosv/about">Medium</a>
+            <a href="https://huggingface.co/marcosv">Hugging Face</a>
+            <a href="mailto:marcos.conde [at] uni-wuerzburg.de">Email</a>
+          </nav>
+          <blockquote class="sidebar-motto">
+            <p>井の中の蛙大海を知らず · 井鼃不可以語於海者，拘於虛也</p>
+            <p>"I learned very early the difference between knowing the name of something and knowing something." — Richard Feynman</p>
+          </blockquote>
+        </aside>
 
-                <p>I'm a PhD Candidate in Artificial Intelligence and Computer Vision at the University of Würzburg, advised by <a href="https://scholar.google.com/citations?user=u3MwH5kAAAAJ">Prof. Radu Timofte</a>. 
-                  I'm also Kaggle Grandmaster at <a href="https://h2o.ai/">H2O.ai</a>.
-                  <br>
-                  Since 2024, I am Chief Scientific Advisor at <a href="https://cidaut.ai/">Fundación CIDAUT</a> in Spain, working on cameras and robots with a brilliant team of students!
-                  <br>
-                  <br>
-                  During my PhD (2022-2025), I was Computer Vision Scientist at <a href="https://sonyinteractive.com/en/news/blog/the-visual-computing-group-vcg-is-happy-to-present-the-1st-ais-vision-graphics-and-ai-for-streaming-workshop-at-cvpr-2024/">Sony PlayStation</a>, working on Graphics, Super-Resolution (like DLSS), and Streaming. 
-                  <br>
-                </p>
-                
-                <p>During 2020-21, I was Research Intern at <em>Huawei Noah’s Ark Lab</em> (London), and received the best intern award for my work on <a href="https://ojs.aaai.org/index.php/AAAI/article/view/19926">neural ISPs and RAW processing</a> supervised by <a href="http://perezpellitero.github.io/">Dr. Eduardo Pérez-Pellitero</a>, while undergrad.
-                </p>
+        <div class="site-main">
 
-                <p style="text-align:center">
-                  <a href="https://scholar.google.com/citations?hl=en&user=NtB1kjYAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/mv-lab">GitHub</a> &nbsp;/&nbsp;
-                  <a href="https://www.kaggle.com/jesucristo">Kaggle</a> &nbsp;/&nbsp;
-                  <a href="https://medium.com/@drmarcosv/about">Medium</a> &nbsp;/&nbsp;
-                  <a href="https://huggingface.co/marcosv">HF 🤗 </a> &nbsp;/&nbsp;
-                  <a href="mailto:marcos.conde[at]uni-wuerzburg.de">Mail</a> &nbsp;/&nbsp;
-                  <a href="MarcosConde-bio.txt">Bio</a>
-                </p>
-
-                <p style="margin-top:0.5em;margin-bottom:0em;">
-                  <br>
-                  <code style="font-size: 90%;">井の中の蛙大海を知らず &nbsp;|&nbsp 井鼃不可以語於海者，拘於虛也 </code>
-                  <br>
-                  <code style="font-size: 90%;">"I learned very early the difference between knowing the name of something and knowing something."
-                    - Richard Feynman</code>
-                </p>
-
-              </td>
-
-              <td style="padding:2%;width:40%;max-width:40%">
-                <img src="images/marcosv.jpg" alt="Marcos V. Conde" class="profile-pic">
-                <!--
-                <img style="width:85%;max-width:85%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/marcosv.jpg" class="hoverZoomLink">
-                -->
-              </td>
-            </tr>
-
-          </tbody></table>
-
-          <!--NEWS-->
-
-          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;">
-            <tbody>
-              <tr>
-                <td style="padding:20px;vertical-align:top;">
-                  <h2>News</h2>
-                  <!-- Wrap only the news paragraphs in a scrollable div -->
-                  <div class="news-scroll">
-
-                    <!--<p>
-                      <code>[Dec 2025]</code> Year wrap up with x4 ICCV, x1 CVPR, x1 WACV, x1 ICIP, Tutorial at ICCV, and x4 Workshops.
-                    </p>
-                    -->
-
-                    <p>
-                      <code>[Nov 2025]</code> I host with CIDAUT 🤖📷 <a href="https://supercamerai.github.io">Smart Cameras for Smarter Autonomous Robots</a>, Workshop at BMVC 2025
-                    </p>
-
-                    <p>
-                      <code>[Oct 2025]</code> I host <a href="https://mv-lab.github.io/neuralisp-iccv25/">A Tour Through AI-powered Photography and Imaging</a>, Tutorial at ICCV 2025 📸🌴🌊
-                    </p>
-
-                    <p>
-                      <code>[Oct 2025]</code> 4 papers accepted at ICCV 2025: <a href="https://arxiv.org/abs/2503.16067">"Bokehlicious: Bokeh Rendering"</a>, <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Conde_PixTalk_Controlling_Photorealistic_Image_Processing_and_Editing_with_Language_ICCV_2025_paper.html">"<b>PixTalk</b>: Editing Imageswith Language"</a>,
-                      and <a href="https://arxiv.org/abs/2405.16807">"Neural Image Compression"</a> and <a href="https://openaccess.thecvf.com/content/ICCV2025W/AIGENS/papers/Lao_High-Fidelity_4x_Neural_Reconstruction_of_Real-time_Path_Traced_Videos_ICCVW_2025_paper.pdf">"Neural Path Tracing"</a>
-                    </p>
-                    
-                    <p>
-                      <code>[Oct 2025]</code> I organize the <a href="https://ai4streaming-workshop.github.io/">2nd Workshop on <b>AI</b> for Content <b>Gen</b>eration, Quality <b>En</b>hancement and <b>S</b>treaming</a> at ICCV 2025 🌴🌅🌊
-                    </p>
-
-                    <p>
-                      <code>[Oct 2025]</code> I co-org the <a href="https://www.cvlai.net/aim/2025/">AIM 2025 Workshop</a> at ICCV 2025 🌴🌅🌊 My challenges: (1) Efficient Real-world Deblurring, (2) Real-world RAW Denoising, (3) Perceptual Super-Resolution.
-                    </p>
-                    
-                    <p>
-                      <code>[June 2025]</code> CVPR 2025 <a href="https://arxiv.org/abs/2412.13443">DarkIR: Robust Low-Light Image Restoration</a> (x3 accepts) -- 1st paper of my students
-                    </p>
-
-                    <p>
-                      <code>[June 2025]</code> I co-org the <a href="https://www.cvlai.net/ntire/2025/">NTIRE 2025 Workshop</a> at CVPR 2025. My challenges (1) RAW Image Restoration and Super-Resolution, (2) RAW Reconstruction from sRGB.
-                    </p>
-
-                    <p>
-                      <code>[Oct 2024]</code> ECCV 2024 <a href="https://mv-lab.github.io/InstructIR/"> <b>InstructIR: High-Quality Image Restoration Following Human Instructions</b> </a> is trending on HF 🤗. 
-                      Read the <a href="https://arxiv.org/abs/2401.16468">preprint </a> |  
-                      Watch the demo <a href="images/instructir.mp4"> Video </a> |  
-                      Our demo is available <a href="https://huggingface.co/spaces/marcosv/InstructIR">Try it now! (click)</a>
-                    </p>
-      
-                    <p>
-                      <code>[June 2024]</code> We organize the 1st <a href="https://ai4streaming-workshop.github.io/">AI for Streaming Workshop at CVPR 2024</a>. Check the awesome speakers and challenges in the website. The workshop is sponsored by Sony PlayStation, Meta and Netflix. 
-                    </p>
-      
-                    <p>
-                      <code>[Jan 2024]</code> I co-organize the <a href="https://cvlai.net/ntire/2024/">New Trends in Image Restoration and Enhancement (NTIRE)</a> Workshop at CVPR 2024.<br>
-                      I organize the RAW SR and Portrait IQA Challenges.
-                    </p>
-                  
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
+          <section class="about">
+            <!-- Add a bio entry: copy one .bio-item block and paste at the top (newest first). -->
+            <div class="bio-item">
+              <p class="bio-date">Now</p>
+              <p class="bio-text"> <em>I am building real Visual Intelligence, way beyond language and human perception.</em>
+              <br> 
+              <br> 
+              I'm also Kaggle Grandmaster at <a href="https://h2o.ai/">H2O.ai</a>, and Chief Scientific Advisor at <a href="https://cidaut.ai/">Foundation CIDAUT</a> in Spain <span aria-hidden="true">🇪🇸</span> working with brilliant students.</p>
+            </div>
+            <div class="bio-item">
+              <p class="bio-date">2025 Ph.D.</p>
+              <p class="bio-text">I finished my Ph.D. in Computer Science (<em>summa cum laude</em>) at the University of Würzburg, advised by <a href="https://scholar.google.com/citations?user=u3MwH5kAAAAJ">Prof. Radu Timofte</a>. Dissertation: <em>Photorealistic and Controllable Neural Image Processing</em>. Final Bosses: Ming-Hsuan Yang, Lei Zhang, Jirí Matas.</p>
+            </div>
+            <div class="bio-item">
+              <p class="bio-date">2022 – 2025</p>
+              <p class="bio-text">I joined <a href="https://sonyinteractive.com/en/news/blog/the-visual-computing-group-vcg-is-happy-to-present-the-1st-ais-vision-graphics-and-ai-for-streaming-workshop-at-cvpr-2024/">Sony PlayStation</a>, where I was a Computer Vision Scientist on Super-Resolution and AI Graphics Enhancement (like NVIDIA DLSS).</p>
+            </div>
+            <div class="bio-item">
+              <p class="bio-date">2022 M.Sc.</p>
+              <p class="bio-text">M.Sc. in Computer Vision from the Autonomous University of Barcelona (UAB), with honours for <a href="https://openaccess.thecvf.com/content/WACV2023/html/Conde_Perceptual_Image_Enhancement_for_Smartphone_Real-Time_Applications_WACV_2023_paper.html"><em>Real-time Photography Enhancement</em></a>, advised by <a href="https://scholar.google.com/citations?user=gjnuPMoAAAAJ">Dr. Javier Vazquez-Corral</a> and <a href="https://scholar.google.com/citations?user=Gv1QGSMAAAAJ">Prof. Michael S. Brown (Samsung)</a>.</p>
+            </div>
+            <div class="bio-item">
+              <p class="bio-date">2020/21</p>
+              <p class="bio-text">I worked at <em>Huawei Noah’s Ark Lab</em> (London) and received the best intern award for my work on <a href="https://ojs.aaai.org/index.php/AAAI/article/view/19926">camera ISPs</a>, supervised by <a href="http://perezpellitero.github.io/">Dr. Eduardo Pérez-Pellitero</a>.</p>
+            </div>
+          </section>
 
         <!-- HIGHLIGHTS -->
+        <section class="highlights" aria-labelledby="highlights-heading">
+          <h2 id="highlights-heading">Highlights</h2>
+          <!--
+            HIGHLIGHT TEMPLATE (copy to top of .highlights-grid):
+            <article class="highlight-card">
+              <a class="highlight-card__link" href="URL">
+                <div class="highlight-card__media">
+                  <img src="images/example.jpg" alt="Short description" loading="lazy">
+                </div>
+                <div class="highlight-card__body">
+                  <p class="highlight-card__tag">Venue or type</p>
+                  <h3 class="highlight-card__title">Title</h3>
+                </div>
+              </a>
+            </article>
+          -->
+          <div class="highlights-grid">
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        <tbody>
-          <tr>
-            <td>
-              <h2>Highlights</h2>
-            </td>
-          </tr>
-        </tbody>
-        </table>
+            <article class="highlight-card">
+              <a class="highlight-card__link" href="https://www.cvlai.net/ntire/2026/">
+                <div class="highlight-card__media highlight-card__media--contain">
+                  <img src="images/highlight_ntire_cvpr26.png" alt="NTIRE 2026 workshop logo" loading="lazy">
+                </div>
+                <div class="highlight-card__body">
+                  <p class="highlight-card__tag">CVPR 2026 Workshop</p>
+                  <h3 class="highlight-card__title">NTIRE: New Trends in Image Restoration and Enhancement</h3>
+                </div>
+              </a>
+            </article>
 
-        <div class="pill-container">
-        <div class="pill">
-          <a href="https://mv-lab.github.io/neuralisp-iccv25/"><img class="thumbnail" src="neuralisp-iccv25/imgs/banner.png" alt="neuralISP-ICCV25"></a>
-          <p><a href="https://mv-lab.github.io/neuralisp-iccv25/"><papertitle>A Tour Through AI-powered Photography and Imaging</papertitle></a><br>ICCV 2025 Tutorial</p>
-        </div>
+            <article class="highlight-card">
+              <a class="highlight-card__link" href="https://ai4streaming-workshop.github.io/">
+                <div class="highlight-card__media">
+                  <img src="images/ais_cvpr24.jpg" alt="AI for streaming workshop" loading="lazy">
+                </div>
+                <div class="highlight-card__body">
+                  <p class="highlight-card__tag">CVPR 2026 Workshop</p>
+                  <h3 class="highlight-card__title">AI for Content Generation, Quality Enhancement and Streaming</h3>
+                </div>
+              </a>
+            </article>
 
-        <div class="pill">
-          <a href="https://ai4streaming-workshop.github.io/"><img class="thumbnail" src="images/ais_cvpr24.jpg" alt="ais"></a>
-          <p><a href="https://ai4streaming-workshop.github.io/"><papertitle>AI for Content Generation, Quality Enhancement and Streaming</papertitle></a> CVPR 2024</p>
-        </div>
+            <article class="highlight-card">
+              <a class="highlight-card__link" href="https://mv-lab.github.io/neuralisp-iccv25/">
+                <div class="highlight-card__media">
+                  <img src="neuralisp-iccv25/imgs/banner.png" alt="AI-powered photography tutorial" loading="lazy">
+                </div>
+                <div class="highlight-card__body">
+                  <p class="highlight-card__tag">ICCV 2025 Tutorial</p>
+                  <h3 class="highlight-card__title">A Tour Through AI-powered Photography and Imaging</h3>
+                </div>
+              </a>
+            </article>
 
-        <div class="pill">
-          <a href="https://github.com/mv-lab/InstructIR"><img class="thumbnail" src="images/iir_poster.jpg" alt="InstructIR Highlight"></a>
-          <p><a href="https://github.com/mv-lab/InstructIR"><papertitle>Restore Images using Text Instructions (InstructIR)</papertitle></a> ECCV 2024</p>
-        </div>
+            <article class="highlight-card">
+              <a class="highlight-card__link" href="https://supercamerai.github.io/">
+                <div class="highlight-card__media highlight-card__media--contain">
+                  <img src="images/highlight_supercamerai_bmvc25.png" alt="Robot mascot for Smart Cameras BMVC 2025 workshop" loading="lazy">
+                </div>
+                <div class="highlight-card__body">
+                  <p class="highlight-card__tag">BMVC 2025 Workshop</p>
+                  <h3 class="highlight-card__title">Smart Cameras for Smarter Autonomous Vehicles &amp; Robots</h3>
+                </div>
+              </a>
+            </article>
 
-        <div class="pill">
-          <a href="https://sonyinteractive.com/en/news/blog/the-visual-computing-group-vcg-is-happy-to-present-the-1st-ais-vision-graphics-and-ai-for-streaming-workshop-at-cvpr-2024/"><img class="thumbnail" src="images/sony_cvpr24.jpeg" alt="sony"></a>
-          <p><a href="https://sonyinteractive.com/en/news/blog/the-visual-computing-group-vcg-is-happy-to-present-the-1st-ais-vision-graphics-and-ai-for-streaming-workshop-at-cvpr-2024/">
-            <papertitle>Me at Sony PlayStation</papertitle></a><br>AI Graphics Enhancement & Super-Resolution</p>
-        </div>
+            <article class="highlight-card">
+              <a class="highlight-card__link" href="https://github.com/mv-lab/InstructIR">
+                <div class="highlight-card__media">
+                  <img src="images/instructir.gif" alt="InstructIR demo" loading="lazy">
+                </div>
+                <div class="highlight-card__body">
+                  <p class="highlight-card__tag">InstructIR ECCV 2024</p>
+                  <h3 class="highlight-card__title">Restore Images Following Human Instructions</h3>
+                </div>
+              </a>
+            </article>
 
-        </div>
+            <article class="highlight-card">
+              <a class="highlight-card__link" href="https://sonyinteractive.com/en/news/blog/the-visual-computing-group-vcg-is-happy-to-present-the-1st-ais-vision-graphics-and-ai-for-streaming-workshop-at-cvpr-2024/">
+                <div class="highlight-card__media">
+                  <img src="images/sony_cvpr24.jpeg" alt="Sony PlayStation research" loading="lazy">
+                </div>
+                <div class="highlight-card__body">
+                  <p class="highlight-card__tag">Sony PlayStation</p>
+                  <h3 class="highlight-card__title">AI Graphics Enhancement &amp; Super-Resolution</h3>
+                </div>
+              </a>
+            </article>
+
+          </div>
+        </section>
         
-          <!-- RESEARCH-->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-                <p>
-                  My current research interests include deep learning, low-level computer vision, vision-language models, and computational photography.
-                  <br>
-                  <em><b>My research aims to achieve real AI Visual Intelligence and Super-human perception.</b> I replace the eyes with cameras and the brain with a computer.</em>
-                  <br>
-                  Representative papers are <span class="highlight">highlighted</span> -- check my <a href="https://scholar.google.com/citations?user=NtB1kjYAAAAJ&hl=en">Google Scholar</a> to see the complete list.
-                </p>
+          <section class="research">
+            <h2>Research</h2>
+            <p>
+              <em><b>My research aims to achieve real AI Visual Intelligence and Super-human perception.</b> I replace the eyes with cameras and the brain with a computer.</em>
+            </p>
+            <p>
+              My current research interests include deep learning, low-level computer vision, computational photography, imaging, and vision-language models.
+            </p>
+            <p>
+              Representative papers are <span class="highlight">highlighted</span> — check my <a href="https://scholar.google.com/citations?user=NtB1kjYAAAAJ&amp;hl=en">Google Scholar</a> for the complete list.
+            </p>
+          </section>
 
-                <p>
-                  <b>People that knows me:</b> <a href="https://scholar.google.com/citations?user=u3MwH5kAAAAJ">Radu Timofte</a> (爸爸) &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=Gv1QGSMAAAAJ">Michael S. Brown</a> (York University, VP Samsung) &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=jjF4cMYAAAAJ">Tom Bishop</a> (CTO, Glass Imaging) &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=gjnuPMoAAAAJ">Javier Vazquez-Corral</a> (CVC, UAB) &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=BM6XOmUAAAAJ">Sira Ferradans</a> (DXOMARK) &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=XgljlGUAAAAJ">Ioannis Katsavounidis</a> (Meta) &nbsp;/&nbsp;
-                  <a href="https://ai.sony/people/Daisuke-Iso/">Daisuke Iso</a> (Sony AI)
-                </p>
+          <!-- PAPERS (newest first) -->
+          <table class="papers-table" style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;"><tbody>
+    <!--
+      PAPER ENTRY TEMPLATE (for humans/agents):
+      1) Copy one full paper row: <tr class="paper-row" ...> ... </tr>
+      2) Paste at the top of this PAPERS tbody (newest first).
+      3) Update title, authors, venue/year, links, and summary.
+      4) Keep image width and td widths unchanged for visual consistency.
+      Minimal skeleton:
+      <tr class="paper-row" onmouseout="paper_x_stop()" onmouseover="paper_x_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">...</td>
+        <td style="padding:20px;width:75%;vertical-align:middle">...</td>
+      </tr>
+      Video teaser skeleton:
+      <tr class="paper-row" bgcolor="#ffffd0">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="paper-teaser-video">
+            <video muted autoplay loop playsinline poster="images/poster.jpg">
+              <source src="https://example.com/teaser.mp4" type="video/mp4">
+            </video>
+          </div>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">...</td>
+      </tr>
+    -->
 
-              </td>
-            </tr>
-          </tbody></table>
-
-          <!--PAPERS-->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-	
-    
-    <!--INRetouch: Context Aware Implicit Neural Representation for Photography Retouching-->
-    <tr onmouseout="inretouch_stop()" onmouseover="inretouch_start()">
+    <!--RealX3D: Physically-Degraded 3D Benchmark-->
+    <tr class="paper-row" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <img src='https://omaralezaby.github.io/inretouch/static/images/Teaser.jpg' width="170" >
+        <div class="paper-teaser-video">
+          <video muted autoplay loop playsinline poster="images/realx3d_poster.jpg" aria-label="RealX3D low-light 3D restoration teaser">
+            <source src="https://i2wm.github.io/3DRR_2026/static/videos/lowlight_teaser_compressed.mp4" type="video/mp4">
+          </video>
         </div>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2412.03848">
-      <span class="papertitle">INRetouch: Context Aware Implicit Neural Representation for Photography Retouching</span>
+        <a href="https://i2wm.github.io/3DRR_2026/">
+          <span class="papertitle">RealX3D: A Physically-Degraded 3D Benchmark for Multi-view Visual Restoration and Reconstruction</span>
         </a>
         <br>
-        <a href="https://scholar.google.com/citations?user=8v3dYzEAAAAJ&hl=en">Omar Elezabi</a>,
-        <strong>Marcos V. Conde</strong>,
-        Zongwei Wu,
-        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
+        Shuhong Liu, Chenyu Bao, Ziteng Cui, Yun Liu, Xuangeng Chu, Lin Gu, <strong>Marcos V. Conde</strong>, et al.
         <br>
-        <em>WACV</em>, 2026
-        <br>
-        <a href="https://arxiv.org/abs/2412.03848">arXiv</a>
+        <a href="https://i2wm.github.io/3DRR_2026/">Project</a>
         /
-        <a href="https://omaralezaby.github.io/inretouch/">project page</a>
+        <a href="https://arxiv.org/abs/2512.23437">arXiv</a>
+        /
+        <a href="https://www.codabench.org/competitions/13993/">NTIRE 2026 Challenge</a>
+        /
+        <a href="https://i2wm.github.io/3DRR_2026/static/videos/lowlight_teaser_compressed.mp4">Video</a>
         <p></p>
         <p>
-          We propose INRetouch, a context-aware implicit neural representation for photography retouching. Our method uses neural representations to learn and apply photo retouching styles.
+          <em>RealX3D is a real-capture 3D benchmark for restoration and reconstruction under in-the-wild degradations — low-light, blur, occlusion, reflection, etc.</em>
         </p>
       </td>
-    </tr>      
-    
-    <!--Towards Unified Image Deblurring using a Mixture-of-Experts Decoder-->
-    <tr onmouseout="demo_stop()" onmouseover="demo_start()" bgcolor="#ffffd0">
+    </tr>
+
+    <!--DeMoE: Towards Unified Image Deblurring using a Mixture-of-Experts Decoder-->
+    <tr class="paper-row" onmouseout="demoe_stop()" onmouseover="demoe_start()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='demo_image'>
-          
-          <img src='https://github.com/cidautai/DeMoE/raw/main/assets/teaser_demoe.png' width="170">
-          
+          <div class="two" id="demoe_image">
+            <img src="images/demoe_out.jpg" width="170" alt="DeMoE deblurred result">
           </div>
-
-          <img src='https://github.com/cidautai/DeMoE/raw/main/assets/teaser_demoe.png' width="170" >
+          <img src="images/demoe_in.jpg" width="170" alt="DeMoE blurry input">
         </div>
-        
         <script type="text/javascript">
-          function demo_start() {
-            document.getElementById('demo_image').style.opacity = "1";
+          function demoe_start() {
+            document.getElementById('demoe_image').style.opacity = "1";
           }
-
-          function demo_stop() {
-            document.getElementById('demo_image').style.opacity = "0";
+          function demoe_stop() {
+            document.getElementById('demoe_image').style.opacity = "0";
           }
-          demo_stop()
+          demoe_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://arxiv.org/abs/2508.06228">
-			<span class="papertitle">Towards Unified Image Deblurring using a Mixture-of-Experts Decoder</span>
+          <span class="papertitle">Towards Unified Image Deblurring using a Mixture-of-Experts Decoder</span>
         </a>
         <br>
-        Daniel Feijoo, Paula Garrido-Mellado, Jaesung Rim, Alvaro Garcia, <strong>Marcos V. Conde</strong>
+        Daniel Feijoo, Paula Garrido-Mellado, Jaesung Rim, Álvaro García, <strong>Marcos V. Conde</strong>
+        <br>
+        <em>Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2026
+        <br>
+        <a href="https://github.com/cidautai/DeMoE">GitHub</a>
+        /
+        <a href="https://arxiv.org/abs/2508.06228">arXiv</a>
+        /
+        <a href="https://huggingface.co/spaces/Cidaut/DeMoE">Demo 🤗</a>
+        <p></p>
+        <p>
+          <em><b>DeMoE</b> is the first all-in-one deblurring method that restores images with diverse blur types — global motion, local motion, low-light blur, and defocus.</em>
+        </p>
+      </td>
+    </tr>
+
+    <!--FLOL: Fast Baselines for Real-World Low-Light Enhancement-->
+    <tr class="paper-row" onmouseout="flol_stop()" onmouseover="flol_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id="flol_image">
+            <img src="images/flol_out.png" width="170" alt="FLOL enhanced result">
+          </div>
+          <img src="images/flol_in.png" width="170" alt="FLOL low-light input">
+        </div>
+        <script type="text/javascript">
+          function flol_start() {
+            document.getElementById('flol_image').style.opacity = "1";
+          }
+          function flol_stop() {
+            document.getElementById('flol_image').style.opacity = "0";
+          }
+          flol_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2501.09718">
+          <span class="papertitle">FLOL: Fast Baselines for Real-World Low-Light Enhancement</span>
+        </a>
+        <br>
+        Juan C. Benito, Daniel Feijoo, Álvaro García, <strong>Marcos V. Conde</strong>
         <br>
         <em>arXiv preprint</em>, 2025
         <br>
-        <a href="https://arxiv.org/abs/2508.06228">arXiv</a>
+        <a href="https://arxiv.org/abs/2501.09718">arXiv</a>
         /
-        <a href="https://github.com/cidautai/DeMoE">GitHub</a>
+        <a href="https://github.com/cidautai/FLOL">GitHub</a>
         <p></p>
         <p>
-          We propose a unified approach for image deblurring using a mixture-of-experts decoder architecture that can handle different types of blur in a single model.
+          Fast and efficient baselines for real-world low-light image enhancement. Process HD videos at 24 FPS. Fastest model in NTIRE challenges.
         </p>
       </td>
-    </tr>	
+    </tr>
 
     <!--PixTalk: Controlling Photorealistic Image Processing and Editing with Language-->
-    <tr onmouseout="pixtalk_stop()" onmouseover="pixtalk_start()" bgcolor="#ffffd0">
+    <tr class="paper-row" onmouseout="pixtalk_stop()" onmouseover="pixtalk_start()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='dummy_image'>
@@ -344,16 +368,16 @@
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Conde_PixTalk_Controlling_Photorealistic_Image_Processing_and_Editing_with_Language_ICCV_2025_paper.html">
-			<span class="papertitle">PixTalk: Controlling Photorealistic Image Processing and Editing with Language</span>
+          <span class="papertitle">PixTalk: Controlling Photorealistic Image Processing and Editing with Language</span>
         </a>
         <br>
         <strong>Marcos V. Conde</strong>, Zihao Lu, Radu Timofte
         <br>
-        <em>International Conference on Computer Vision (ICCV) </em>, 2025
+        <em>International Conference on Computer Vision (ICCV)</em>, 2025
         <br>
-        <a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Conde_PixTalk_Controlling_Photorealistic_Image_Processing_and_Editing_with_Language_ICCV_2025_paper.pdf">paper</a> /
-        <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Conde_PixTalk_Controlling_Photorealistic_Image_Processing_and_Editing_with_Language_ICCV_2025_paper.html">cvf Proceedings</a> / 
-        <a href="https://github.com/mv-lab/pixtalk/">GitHub</a>
+        <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Conde_PixTalk_Controlling_Photorealistic_Image_Processing_and_Editing_with_Language_ICCV_2025_paper.html">Paper</a>
+        /
+        <a href="https://github.com/mv-lab/pixtalk">GitHub</a>
         <p></p>
         <p>
         We propose the first approach that introduces language and explicit control into the image processing and editing pipeline. PixTalk is a vision-language multi-task image processing model, guided using text instructions. Our method is able to perform the most popular techniques in photography.
@@ -363,7 +387,7 @@
 
 
     <!--Bokehlicious: Photorealistic Bokeh Rendering with Controllable Apertures-->
-    <tr onmouseout="bokeiccv_stop()" onmouseover="bokeiccv_start()">
+    <tr class="paper-row" onmouseout="bokeiccv_stop()" onmouseover="bokeiccv_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='bokehiccv_image'>
@@ -393,11 +417,9 @@
         <br>
         Tim Seizinger, Florin-Alexandru Vasluianu, <strong>Marcos V. Conde</strong>, Zongwei Wu, Radu Timofte
         <br>
-        <em>International Conference on Computer Vision (ICCV) </em>, 2025 &nbsp <font color="red"><strong>(Highlighted Paper)</strong></font>
+        <em>International Conference on Computer Vision (ICCV) </em>, 2025
         <br>
-        <a href="https://arxiv.org/abs/2503.16067">arXiv</a> / 
-        <a href="https://github.com/TimSeizinger/Bokehlicious">GitHub</a> /
-        <a href="https://huggingface.co/datasets/timseizinger/RealBokeh_3MP/tree/main">Dataset</a>
+        <a href="https://arxiv.org/abs/2503.16067">arXiv</a>, Code and Models upcoming
         <p></p>
         <p>
           The best Bokeh rendering method using neural networks and a novel dataset. The neural model allows to control the apertur from f/16 to f/1.8
@@ -406,7 +428,7 @@
     </tr>	
     
     <!--Extreme Compression of Adaptive Neural Images-->
-    <tr onmouseout="ani_stop()" onmouseover="ani_start()">
+    <tr class="paper-row" onmouseout="ani_stop()" onmouseover="ani_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='ani_image'>
@@ -438,60 +460,16 @@
         <br>
         <em>International Conference on Computer Vision (ICCV) Workshop</em>, 2025
         <br>
-        <a href="https://arxiv.org/abs/2405.16807">arXiv</a> / 
-        <a href="images/iccv25_ani_poster.pdf">Poster</a>
+        <a href="https://arxiv.org/abs/2405.16807">arXiv</a>
         <p></p>
         <p>
-          (Work done at Sony PlayStation) We present a novel analysis on compressing neural fields, with the focus on images. We also introduce Adaptive Neural Images (ANI), an efficient neural representation that enables adaptation to different inference or transmission requirements.
+          We present a novel analysis on compressing neural fields, with the focus on images. We also introduce Adaptive Neural Images (ANI), an efficient neural representation that enables adaptation to different inference or transmission requirements.
         </p>
       </td>
     </tr>	
 
-    <!--Fast Iterative Enhancement for Image Signal Processing-->
-    <tr onmouseout="fieisp_stop()" onmouseover="fieisp_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='fieisp_image'>
-          
-          <img src='images/sisp/20201031-144714_3_6.jpg' width="170">
-          
-          </div>
-
-          <img src='images/sisp/20201031-144714_3_6_raw.jpg' width="170" >
-        </div>
-        
-        <script type="text/javascript">
-          function fieisp_start() {
-            document.getElementById('fieisp_image').style.opacity = "1";
-          }
-
-          function fieisp_stop() {
-            document.getElementById('fieisp_image').style.opacity = "0";
-          }
-          fieisp_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://ieeexplore.ieee.org/document/11084331">
-			<span class="papertitle">Fast Iterative Enhancement for Image Signal Processing</span>
-        </a>
-        <br>
-        <strong>Marcos V. Conde</strong>,
-        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
-        <br>
-        <em>IEEE International Conference on Image Processing (ICIP)</em>, 2025
-        <br>
-        <a href="https://ieeexplore.ieee.org/document/11084331">paper</a> / 
-        <a href="https://github.com/mv-lab/AISP">GitHub</a>
-        <p></p>
-        <p>
-          We propose a fast iterative enhancement method for image signal processing that enables efficient and high-quality image reconstruction.
-        </p>
-      </td>
-    </tr>
-
     <!--DarkIR-->
-    <tr onmouseout="darkir_stop()" onmouseover="darkir_start()" bgcolor="#ffffd0">
+    <tr class="paper-row" onmouseout="darkir_stop()" onmouseover="darkir_start()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='darkir_image'>
@@ -538,54 +516,13 @@
         <p></p>
         <p>
           <em><b>DarkIR</b> In low-light conditions, you have noise and blur in the images, yet, previous methods cannot tackle dark noisy images and dark blurry using a single model. 
-            We propose the first approach for all-in-one low-light restoration including illumination, noisy and blur enhancement.
+            We propose the first approach for all-in-one low-light restoration including illumination, noisy and blur enhancement.</em>
         </p>
       </td>
-    </tr>	
-
-    <!--FLOL: Fast Baselines for Real-World Low-Light Enhancement-->
-    <tr onmouseout="flol_stop()" onmouseover="flol_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='flol_image'>
-          
-          <img src='images/flol_out.png' width="170">
-          
-          </div>
-
-          <img src='images/flol_in.png' width="170" >
-        </div>
-        
-        <script type="text/javascript">
-          function flol_start() {
-            document.getElementById('flol_image').style.opacity = "1";
-          }
-
-          function flol_stop() {
-            document.getElementById('flol_image').style.opacity = "0";
-          }
-          flol_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2501.09718">
-			<span class="papertitle">FLOL: Fast Baselines for Real-World Low-Light Enhancement</span>
-        </a>
-        <br>
-        Juan C. Benito, Daniel Feijoo, Alvaro Garcia, <strong>Marcos V. Conde</strong>
-        <br>
-        <em>arXiv preprint</em>, 2025
-        <br>
-        <a href="https://arxiv.org/abs/2501.09718">arXiv</a> / <a href="https://github.com/cidautai/FLOL">GitHub</a>
-        <p></p>
-        <p>
-          Fast and efficient baselines for real-world low-light image enhancement. Process HD videos at 24FPS. Fastest model in NTIRE Challenges.
-        </p>
-      </td>
-    </tr>	  
+    </tr>
 
     <!--InstructIR-->
-    <tr onmouseout="inst_stop()" onmouseover="inst_start()" bgcolor="#ffffd0">
+    <tr class="paper-row" onmouseout="inst_stop()" onmouseover="inst_start()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='inst_image'>
@@ -600,7 +537,7 @@
           
           </div>
 
-          <img src='images/instructir.gif' width="170" >
+          <img src='images/instructir.png' width="170" >
         </div>
         
         <script type="text/javascript">
@@ -646,7 +583,7 @@
     </tr>        
 
     <!--Streaming Neural Images-->
-    <tr onmouseout="sni_stop()" onmouseover="sni_start()">
+    <tr class="paper-row" onmouseout="sni_stop()" onmouseover="sni_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='sni_image'>
@@ -679,17 +616,16 @@
         <br>
         <em>IEEE International Conference on Image Processing (ICIP)</em>, 2024
         <br>
-        <a href="https://arxiv.org/abs/2409.17134">arXiv</a> / 
-        <a href="images/radu_inr.jpg">Easter Egg</a>
+        <a href="https://arxiv.org/abs/2409.17134">arXiv</a>
         <p></p>
         <p>
-          (Work done at Sony PlayStation) Implicit Neural Representations (INRs) are a novel paradigm for signal representation that have attracted considerable interest for image compression. We explore the critical yet overlooked limiting factors of INRs, such as computational cost, unstable performance, and robustness
+          Implicit Neural Representations (INRs) are a novel paradigm for signal representation that have attracted considerable interest for image compression. We explore the critical yet overlooked limiting factors of INRs, such as computational cost, unstable performance, and robustness
         </p>
       </td>
     </tr>
 
     <!--RAWIR-->
-    <tr onmouseout="rawir_stop()" onmouseover="rawir_start()">
+    <tr class="paper-row" onmouseout="rawir_stop()" onmouseover="rawir_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='rawir_image'>
@@ -722,8 +658,7 @@
         <br>
         <em>IEEE International Conference on Image Processing (ICIP)</em>, 2024
         <br>
-        <a href="https://arxiv.org/abs/2409.18204">arXiv</a> /
-        <a href="https://github.com/mv-lab/AISP">GitHub</a>
+        <a href="https://arxiv.org/abs/2409.18204">arXiv</a>
         <p></p>
         <p>
           We tackle image restoration directly in the RAW domain (yes, it is tricky and a bit crazy).
@@ -732,7 +667,7 @@
     </tr>
 
     <!--SimpleISP-->
-    <tr onmouseout="sisp_stop()" onmouseover="sisp_start()">
+    <tr class="paper-row" onmouseout="sisp_stop()" onmouseover="sisp_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='sisp_image'>
@@ -778,7 +713,7 @@
     </tr>
 
     <!--NILUT-->
-    <tr onmouseout="nilut_stop()" onmouseover="nilut_start()" bgcolor="#ffffd0">
+    <tr class="paper-row" onmouseout="nilut_stop()" onmouseover="nilut_start()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='nilut_image'>
@@ -834,7 +769,7 @@
     </tr>
 
     <!--RTSR 2024-->
-    <tr onmouseout="piq_stop()" onmouseover="piq_start()">
+    <tr class="paper-row" onmouseout="piq_stop()" onmouseover="piq_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <img src='images/rtsr24.png' width="170" >
@@ -863,7 +798,7 @@
     </tr>
 
     <!--PIQ DXO-->
-    <tr onmouseout="piq_stop()" onmouseover="piq_start()">
+    <tr class="paper-row" onmouseout="piq_stop()" onmouseover="piq_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <img src='images/piq24.png' width="170" >
@@ -893,7 +828,7 @@
     </tr>
 
     <!--BSRAW Challenge-->
-    <tr onmouseout="bsrawc_stop()" onmouseover="bsrawc_start()">
+    <tr class="paper-row" onmouseout="bsrawc_stop()" onmouseover="bsrawc_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='bsrawc_image'>
@@ -937,7 +872,7 @@
     </tr>
 
     <!--BSRAW-->
-    <tr onmouseout="bsraw_stop()" onmouseover="bsraw_start()" bgcolor="#ffffd0">
+    <tr class="paper-row" onmouseout="bsraw_stop()" onmouseover="bsraw_start()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='bsraw_image'>
@@ -982,7 +917,7 @@
     </tr>
 
     <!--BOKEH 2023-->
-    <tr onmouseout="bokeh_stop()" onmouseover="bokeh_start()">
+    <tr class="paper-row" onmouseout="bokeh_stop()" onmouseover="bokeh_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
 
         <div class="one">
@@ -1038,7 +973,7 @@
     </tr>
 
     <!--RTSR 2023-->
-    <tr onmouseout="rtsr_stop()" onmouseover="rtsr_start()">
+    <tr class="paper-row" onmouseout="rtsr_stop()" onmouseover="rtsr_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
 
         <div class="one">
@@ -1091,7 +1026,7 @@
     </tr>
 
     <!--RTSR 2023-->
-    <tr onmouseout="rtsrc_stop()" onmouseover="rtsrc_start()">
+    <tr class="paper-row" onmouseout="rtsrc_stop()" onmouseover="rtsrc_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
 
         <div class="one">
@@ -1126,7 +1061,7 @@
     </tr>
 
     <!--LPIENET-->
-    <tr onmouseout="lpienet_stop()" onmouseover="lpienet_start()">
+    <tr class="paper-row" onmouseout="lpienet_stop()" onmouseover="lpienet_start()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
 
         <div class="one">
@@ -1181,7 +1116,7 @@
     </tr>
 
     <!--SWIN2SR-->
-    <tr onmouseout="swin2sr_stop()" onmouseover="swin2sr_start()"  bgcolor="#ffffd0">
+    <tr class="paper-row" onmouseout="swin2sr_stop()" onmouseover="swin2sr_start()"  bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
 
         <div class="one">
@@ -1239,7 +1174,7 @@
     </tr>
 
     <!--ReverseISP-->
-    <tr onmouseout="risp_stop()" onmouseover="risp_start()">
+    <tr class="paper-row" onmouseout="risp_stop()" onmouseover="risp_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
 
         <div class="one">
@@ -1294,7 +1229,7 @@
     </tr>
 
     <!--Model-Based ISP-->
-    <tr onmouseout="misp_stop()" onmouseover="misp_start()"  bgcolor="#ffffd0">
+    <tr class="paper-row" onmouseout="misp_stop()" onmouseover="misp_start()"  bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='misp_image'>
@@ -1349,7 +1284,7 @@
     </tr>
 
     <!--CLIP Art-->
-    <tr onmouseout="clipart_stop()" onmouseover="clipart_start()">
+    <tr class="paper-row" onmouseout="clipart_stop()" onmouseover="clipart_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
 
         <img src='images/clipart.png' width="170">
@@ -1381,7 +1316,6 @@
       </td>
     </tr>
 
-    <!-- END PAPERS --->
     </tbody></table>
     <!-- END PAPERS --->
 
@@ -1392,29 +1326,19 @@
           <h2>Academic Service</h2>
 
           <p>
-            <b> <em>Teaching:</em> </b> Image Processing and Computational Photography (IPCP), Computer Vision (CV)
+            <b> <em>Reviewer:</em> </b> <a href="https://eccv.ecva.net/Conferences/2024/Reviewers">Outstanding Reviewer at ECCV 2024</a>. CVPR 2022-2026, ECCV 2022-2026, ICCV 2023-2025, IEEE Transactions on Image Processing, IEEE Transactions on Computational Imaging, IEEE Transactions on Pattern Analysis and Machine Intelligence
           </p>
 
-
-          <p>
-            <b> <em>Reviewer:</em> </b> <a href="https://eccv.ecva.net/Conferences/2024/Reviewers">Outstanding Reviewer at ECCV 2024</a>. CVPR 2022-2025, ECCV 2022-24, ICCV 2023-2025, AAAI 2023-24, SIGGRAPH 2024, ACCV 2024, IEEE Transactions on Image Processing, IEEE Transactions on Computational Imaging, IEEE Transactions on Pattern Analysis and Machine Intelligence
-          </p>
-          <p>
-            <b> <em>Tutorials:</em> </b> 
-            <a href="https://mv-lab.github.io/neuralisp-iccv25/"> <b> A Tour Through AI-powered Photography and Imaging, ICCV 2025</b> </a> 
-          </p>
           <p>
             <b> <em>Workshops:</em> </b> 
-            <a href="https://supercamerai.github.io/"> <b>Smart Cameras for Smarter Robots at BMVC 2025</b> </a> &nbsp;/&nbsp;
-            <a href="https://ai4streaming-workshop.github.io/"> <b>AI for content Generation and Streaming (AIGENS) at ICCV 2025</b> </a> &nbsp;/&nbsp;
-            <a href="https://cvlai.net/aim/2025/">Advances in Image Manipulation (AIM) at ICCV 2025</a> &nbsp;/&nbsp;
-            <a href="https://cvlai.net/ntire/2025/">NTIRE CVPR 2025</a> &nbsp;/&nbsp; 
-            <a href="https://cvlai.net/aim/2024/">AIM ECCV 2024</a> &nbsp;/&nbsp;
-            <a href="https://ai4streaming-workshop.github.io/"> AI for Streaming (AIS) CVPR 2024</a> &nbsp;/&nbsp;
-            <a href="https://cvlai.net/ntire/2024/">NTIRE CVPR 2024</a> &nbsp;/&nbsp; 
+            <a href="https://cvlai.net/aim/2025/">AIM 2025 ICCV</a> &nbsp;/&nbsp;
+            <a href="https://cvlai.net/ntire/2025/">NTIRE 2025 CVPR</a> &nbsp;/&nbsp; 
+            <a href="https://cvlai.net/aim/2024/">AIM 2024 ECCV</a> &nbsp;/&nbsp;
+            <a href="https://ai4streaming-workshop.github.io/"> <b>AI for Streaming (AIS 2024) CVPR</b> </a> &nbsp;/&nbsp;
+            <a href="https://cvlai.net/ntire/2024/">NTIRE 2024 CVPR</a> &nbsp;/&nbsp; 
             <a href="https://www.vqeg.org/meetings-home/">VQEG 2023</a> &nbsp;/&nbsp; 
-            <a href="https://cvlai.net/ntire/2023/">NTIRE CVPR 2023</a> &nbsp;/&nbsp;
-            <a href="https://data.vision.ee.ethz.ch/cvl/aim22/">Advances in Image Manipulation (AIM) at ECCV 2022</a>
+            <a href="https://cvlai.net/ntire/2023/">NTIRE 2023 CVPR</a> &nbsp;/&nbsp;
+            <a href="https://data.vision.ee.ethz.ch/cvl/aim22/">AIM 2022 ECCV</a>
           </p>
 
         </td>
@@ -1521,23 +1445,11 @@
       </tr>
     </tbody></table>
 
-          <!-- FOOTER --->
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <br>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:center;font-size:small;">
-                  Design and source code from <a href="https://jonbarron.info/">Jon Barron's website</a>.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
-  </body>
-    <footer style="width:100%;text-align:center;padding:18px 0 10px 0;font-size:14px;color:#888;background:transparent;letter-spacing:0.5px;">
-      &copy; 2025 Marcos V. Conde. All rights reserved.
+        </div>
+      </div>
+    </div>
+    <footer>
+      &copy; 2026 Marcos V. Conde. All rights reserved.
     </footer>
+  </body>
 </html>
