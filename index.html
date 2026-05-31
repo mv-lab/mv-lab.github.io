@@ -215,7 +215,15 @@ body { margin: 0; background: var(--bg); }
       1) Copy one full paper row: <tr class="paper-row" ...> ... </tr>
       2) Paste at the top of this PAPERS tbody (newest first).
       3) Update title, authors, venue/year, links, and summary.
-      4) Keep image width and td widths unchanged for visual consistency.
+      4) Text cell structure:
+         <div class="paper-body">
+           <p class="paper-venue">CVPR · 2026</p>
+           <a href="..." class="paper-title-link"><span class="papertitle">Title</span></a>
+           <p class="paper-authors">... <span class="author-self">Marcos V. Conde</span> ...</p>
+           <p class="paper-links"><a href="...">Paper</a> / ...</p>
+           <p class="paper-desc">Summary.</p>
+         </div>
+      5) Keep image width and td widths unchanged for visual consistency.
       Minimal skeleton:
       <tr class="paper-row" onmouseout="paper_x_stop()" onmouseover="paper_x_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">...</td>
@@ -234,6 +242,27 @@ body { margin: 0; background: var(--bg); }
       </tr>
     -->
 
+
+    <!--Efficient Image Restoration Using Deep Learning: A Survey-->
+    <tr class="paper-row">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src="images/scaling.webp" width="170" alt="Image restoration survey">
+        </div>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <div class="paper-body">
+        <p class="paper-venue">JOURNAL PREPRINT · 2026</p>
+        <a href="https://www.techrxiv.org/doi/full/10.36227/techrxiv.177092225.59864833/v1" class="paper-title-link">
+          <span class="papertitle">Efficient Image Restoration Using Deep Learning: A Survey</span>
+        </a>
+        <p class="paper-authors">Daniel Feijoo, Miguel A. Martínez-Prieto, Anibal Bregon, Álvaro García, <span class="author-self">Marcos V. Conde</span></p>
+        <p class="paper-links"><a href="https://www.techrxiv.org/doi/full/10.36227/techrxiv.177092225.59864833/v1">Paper</a></p>
+        <p class="paper-desc">A survey of efficient deep learning methods for image restoration, covering architectures, training strategies, and practical deployment for real-world restoration pipelines.</p>
+        </div>
+      </td>
+    </tr>
+
     <!--RealX3D: Physically-Degraded 3D Benchmark-->
     <tr class="paper-row" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -244,23 +273,21 @@ body { margin: 0; background: var(--bg); }
         </div>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://i2wm.github.io/3DRR_2026/">
-          <span class="papertitle">RealX3D: A Physically-Degraded 3D Benchmark for Multi-view Visual Restoration and Reconstruction</span>
-        </a>
-        <br>
-        Shuhong Liu, Chenyu Bao, Ziteng Cui, Yun Liu, Xuangeng Chu, Lin Gu, <strong>Marcos V. Conde</strong>, et al.
-        <br>
-        <a href="https://i2wm.github.io/3DRR_2026/">Project</a>
+        <div class="paper-body">
+        <p class="paper-venue">JOURNAL PREPRINT · 2026 · NTIRE CHALLENGE</p>
+        <a href="https://i2wm.github.io/3DRR_2026/" class="paper-title-link">
+                  <span class="papertitle">RealX3D: A Physically-Degraded 3D Benchmark for Multi-view Visual Restoration and Reconstruction</span>
+                </a>
+        <p class="paper-authors">Shuhong Liu, Chenyu Bao, Ziteng Cui, Yun Liu, Xuangeng Chu, Lin Gu, <span class="author-self">Marcos V. Conde</span>, et al.</p>
+        <p class="paper-links"><a href="https://i2wm.github.io/3DRR_2026/">Project</a>
         /
         <a href="https://arxiv.org/abs/2512.23437">arXiv</a>
         /
         <a href="https://www.codabench.org/competitions/13993/">NTIRE 2026 Challenge</a>
         /
-        <a href="https://i2wm.github.io/3DRR_2026/static/videos/lowlight_teaser_compressed.mp4">Video</a>
-        <p></p>
-        <p>
-          <em>RealX3D is a real-capture 3D benchmark for restoration and reconstruction under in-the-wild degradations — low-light, blur, occlusion, reflection, etc.</em>
-        </p>
+        <a href="https://i2wm.github.io/3DRR_2026/static/videos/lowlight_teaser_compressed.mp4">Video</a></p>
+        <p class="paper-desc"><em>RealX3D is a real-capture 3D benchmark for restoration and reconstruction under in-the-wild degradations — low-light, blur, occlusion, reflection, etc.</em></p>
+        </div>
       </td>
     </tr>
 
@@ -284,23 +311,52 @@ body { margin: 0; background: var(--bg); }
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2508.06228">
-          <span class="papertitle">Towards Unified Image Deblurring using a Mixture-of-Experts Decoder</span>
-        </a>
-        <br>
-        Daniel Feijoo, Paula Garrido-Mellado, Jaesung Rim, Álvaro García, <strong>Marcos V. Conde</strong>
-        <br>
-        <em>Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2026
-        <br>
-        <a href="https://github.com/cidautai/DeMoE">GitHub</a>
+        <div class="paper-body">
+        <p class="paper-venue">CVPR · 2026 · LOVIF WORKSHOP</p>
+        <a href="https://arxiv.org/abs/2508.06228" class="paper-title-link">
+                  <span class="papertitle">Towards Unified Image Deblurring using a Mixture-of-Experts Decoder</span>
+                </a>
+        <p class="paper-authors">Daniel Feijoo, Paula Garrido-Mellado, Jaesung Rim, Álvaro García, <span class="author-self">Marcos V. Conde</span></p>
+        <p class="paper-links"><a href="https://github.com/cidautai/DeMoE">GitHub</a>
         /
         <a href="https://arxiv.org/abs/2508.06228">arXiv</a>
         /
-        <a href="https://huggingface.co/spaces/Cidaut/DeMoE">Demo 🤗</a>
-        <p></p>
-        <p>
-          <em><b>DeMoE</b> is the first all-in-one deblurring method that restores images with diverse blur types — global motion, local motion, low-light blur, and defocus.</em>
-        </p>
+        <a href="https://huggingface.co/spaces/Cidaut/DeMoE">Demo 🤗</a></p>
+        <p class="paper-desc"><em><b>DeMoE</b> is the first all-in-one deblurring method that restores images with diverse blur types — global motion, local motion, low-light blur, and defocus.</em></p>
+        </div>
+      </td>
+    </tr>
+
+
+    <!--INRetouch: Context Aware Implicit Neural Representation for Photography Retouching-->
+    <tr class="paper-row" onmouseout="inretouch_stop()" onmouseover="inretouch_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id="inretouch_image">
+            <img src="images/inretouch_after.jpg" width="170" alt="INRetouch retouched result">
+          </div>
+          <img src="images/inretouch_before.jpg" width="170" alt="INRetouch original photo">
+        </div>
+        <script type="text/javascript">
+          function inretouch_start() {
+            document.getElementById('inretouch_image').style.opacity = "1";
+          }
+          function inretouch_stop() {
+            document.getElementById('inretouch_image').style.opacity = "0";
+          }
+          inretouch_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <div class="paper-body">
+        <p class="paper-venue">WACV · 2026</p>
+        <a href="https://omaralezaby.github.io/inretouch/" class="paper-title-link">
+          <span class="papertitle">INRetouch: Context Aware Implicit Neural Representation for Photography Retouching</span>
+        </a>
+        <p class="paper-authors">Omar Elezabi, <span class="author-self">Marcos V. Conde</span>, Zongwei Wu, Radu Timofte</p>
+        <p class="paper-links"><a href="https://omaralezaby.github.io/inretouch/">Project</a> / <a href="https://arxiv.org/abs/2412.03848">arXiv</a></p>
+        <p class="paper-desc">A context-aware implicit neural representation that learns professional retouching from before–after pairs and transfers complex Lightroom-style edits to new images with a single example.</p>
+        </div>
       </td>
     </tr>
 
@@ -324,21 +380,17 @@ body { margin: 0; background: var(--bg); }
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2501.09718">
-          <span class="papertitle">FLOL: Fast Baselines for Real-World Low-Light Enhancement</span>
-        </a>
-        <br>
-        Juan C. Benito, Daniel Feijoo, Álvaro García, <strong>Marcos V. Conde</strong>
-        <br>
-        <em>arXiv preprint</em>, 2025
-        <br>
-        <a href="https://arxiv.org/abs/2501.09718">arXiv</a>
+        <div class="paper-body">
+        <p class="paper-venue">arXiv · 2025</p>
+        <a href="https://arxiv.org/abs/2501.09718" class="paper-title-link">
+                  <span class="papertitle">FLOL: Fast Baselines for Real-World Low-Light Enhancement</span>
+                </a>
+        <p class="paper-authors">Juan C. Benito, Daniel Feijoo, Álvaro García, <span class="author-self">Marcos V. Conde</span></p>
+        <p class="paper-links"><a href="https://arxiv.org/abs/2501.09718">arXiv</a>
         /
-        <a href="https://github.com/cidautai/FLOL">GitHub</a>
-        <p></p>
-        <p>
-          Fast and efficient baselines for real-world low-light image enhancement. Process HD videos at 24 FPS. Fastest model in NTIRE challenges.
-        </p>
+        <a href="https://github.com/cidautai/FLOL">GitHub</a></p>
+        <p class="paper-desc">Fast and efficient baselines for real-world low-light image enhancement. Process HD videos at 24 FPS. Fastest model in NTIRE challenges.</p>
+        </div>
       </td>
     </tr>
 
@@ -367,21 +419,17 @@ body { margin: 0; background: var(--bg); }
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Conde_PixTalk_Controlling_Photorealistic_Image_Processing_and_Editing_with_Language_ICCV_2025_paper.html">
-          <span class="papertitle">PixTalk: Controlling Photorealistic Image Processing and Editing with Language</span>
-        </a>
-        <br>
-        <strong>Marcos V. Conde</strong>, Zihao Lu, Radu Timofte
-        <br>
-        <em>International Conference on Computer Vision (ICCV)</em>, 2025
-        <br>
-        <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Conde_PixTalk_Controlling_Photorealistic_Image_Processing_and_Editing_with_Language_ICCV_2025_paper.html">Paper</a>
+        <div class="paper-body">
+        <p class="paper-venue">ICCV · 2025</p>
+        <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Conde_PixTalk_Controlling_Photorealistic_Image_Processing_and_Editing_with_Language_ICCV_2025_paper.html" class="paper-title-link">
+                  <span class="papertitle">PixTalk: Controlling Photorealistic Image Processing and Editing with Language</span>
+                </a>
+        <p class="paper-authors"><span class="author-self">Marcos V. Conde</span>, Zihao Lu, Radu Timofte</p>
+        <p class="paper-links"><a href="https://openaccess.thecvf.com/content/ICCV2025/html/Conde_PixTalk_Controlling_Photorealistic_Image_Processing_and_Editing_with_Language_ICCV_2025_paper.html">Paper</a>
         /
-        <a href="https://github.com/mv-lab/pixtalk">GitHub</a>
-        <p></p>
-        <p>
-        We propose the first approach that introduces language and explicit control into the image processing and editing pipeline. PixTalk is a vision-language multi-task image processing model, guided using text instructions. Our method is able to perform the most popular techniques in photography.
-        </p>
+        <a href="https://github.com/mv-lab/pixtalk">GitHub</a></p>
+        <p class="paper-desc">We propose the first approach that introduces language and explicit control into the image processing and editing pipeline. PixTalk is a vision-language multi-task image processing model, guided using text instructions. Our method is able to perform the most popular techniques in photography.</p>
+        </div>
       </td>
     </tr>	
 
@@ -411,19 +459,15 @@ body { margin: 0; background: var(--bg); }
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2503.16067">
-			<span class="papertitle">Bokehlicious: Photorealistic Bokeh Rendering with Controllable Apertures</span>
-        </a>
-        <br>
-        Tim Seizinger, Florin-Alexandru Vasluianu, <strong>Marcos V. Conde</strong>, Zongwei Wu, Radu Timofte
-        <br>
-        <em>International Conference on Computer Vision (ICCV) </em>, 2025
-        <br>
-        <a href="https://arxiv.org/abs/2503.16067">arXiv</a>, Code and Models upcoming
-        <p></p>
-        <p>
-          The best Bokeh rendering method using neural networks and a novel dataset. The neural model allows to control the apertur from f/16 to f/1.8
-        </p>
+        <div class="paper-body">
+        <p class="paper-venue">ICCV · 2025</p>
+        <a href="https://arxiv.org/abs/2503.16067" class="paper-title-link">
+        			<span class="papertitle">Bokehlicious: Photorealistic Bokeh Rendering with Controllable Apertures</span>
+                </a>
+        <p class="paper-authors">Tim Seizinger, Florin-Alexandru Vasluianu, <span class="author-self">Marcos V. Conde</span>, Zongwei Wu, Radu Timofte</p>
+        <p class="paper-links"><a href="https://arxiv.org/abs/2503.16067">arXiv</a>, Code and Models upcoming</p>
+        <p class="paper-desc">The best Bokeh rendering method using neural networks and a novel dataset. The neural model allows to control the apertur from f/16 to f/1.8</p>
+        </div>
       </td>
     </tr>	
     
@@ -452,19 +496,15 @@ body { margin: 0; background: var(--bg); }
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2405.16807">
-			<span class="papertitle">Extreme Compression of Adaptive Neural Images</span>
-        </a>
-        <br>
-        Leo Hoshikawa*, <strong>Marcos V. Conde*</strong>, Takeshi Ohashi, Atsushi Irie
-        <br>
-        <em>International Conference on Computer Vision (ICCV) Workshop</em>, 2025
-        <br>
-        <a href="https://arxiv.org/abs/2405.16807">arXiv</a>
-        <p></p>
-        <p>
-          We present a novel analysis on compressing neural fields, with the focus on images. We also introduce Adaptive Neural Images (ANI), an efficient neural representation that enables adaptation to different inference or transmission requirements.
-        </p>
+        <div class="paper-body">
+        <p class="paper-venue">ICCV Workshop · 2025</p>
+        <a href="https://arxiv.org/abs/2405.16807" class="paper-title-link">
+        			<span class="papertitle">Extreme Compression of Adaptive Neural Images</span>
+                </a>
+        <p class="paper-authors">Leo Hoshikawa*, <span class="author-self">Marcos V. Conde*</span>, Takeshi Ohashi, Atsushi Irie</p>
+        <p class="paper-links"><a href="https://arxiv.org/abs/2405.16807">arXiv</a></p>
+        <p class="paper-desc">We present a novel analysis on compressing neural fields, with the focus on images. We also introduce Adaptive Neural Images (ANI), an efficient neural representation that enables adaptation to different inference or transmission requirements.</p>
+        </div>
       </td>
     </tr>	
 
@@ -499,70 +539,42 @@ body { margin: 0; background: var(--bg); }
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2412.13443">
-      <span class="papertitle">DarkIR: Robust Low-Light Image Restoration</span>
-        </a>
-        <br>
-        Daniel Feijoo, Juan C. Benito, Alvaro Garcia, <strong>Marcos V. Conde</strong>
-        <br>
-        <em>Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2025
-        <br>
-        <a href="https://github.com/cidautai/DarkIR">GitHub</a>
+        <div class="paper-body">
+        <p class="paper-venue">CVPR · 2025</p>
+        <a href="https://arxiv.org/abs/2412.13443" class="paper-title-link">
+              <span class="papertitle">DarkIR: Robust Low-Light Image Restoration</span>
+                </a>
+        <p class="paper-authors">Daniel Feijoo, Juan C. Benito, Alvaro Garcia, <span class="author-self">Marcos V. Conde</span></p>
+        <p class="paper-links"><a href="https://github.com/cidautai/DarkIR">GitHub</a>
         /
         <a href="https://arxiv.org/abs/2412.13443">arXiv</a>
         /
-        <a href="https://huggingface.co/spaces/Cidaut/DarkIR">Demo 🤗</a>
-
-        <p></p>
-        <p>
-          <em><b>DarkIR</b> In low-light conditions, you have noise and blur in the images, yet, previous methods cannot tackle dark noisy images and dark blurry using a single model. 
-            We propose the first approach for all-in-one low-light restoration including illumination, noisy and blur enhancement.</em>
-        </p>
+        <a href="https://huggingface.co/spaces/Cidaut/DarkIR">Demo 🤗</a></p>
+        <p class="paper-desc"><em><b>DarkIR</b> In low-light conditions, you have noise and blur in the images, yet, previous methods cannot tackle dark noisy images and dark blurry using a single model. 
+            We propose the first approach for all-in-one low-light restoration including illumination, noisy and blur enhancement.</em></p>
+        </div>
       </td>
     </tr>
 
     <!--InstructIR-->
-    <tr class="paper-row" onmouseout="inst_stop()" onmouseover="inst_start()" bgcolor="#ffffd0">
+    <tr class="paper-row" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='inst_image'>
-          
-          <img src='images/instructir.gif' width="170">
-          <!--
-          <video  width="170" height="150" muted autoplay loop>
-          <source src="images/instructir.mp4" type="video/mp4">
-          Your browser does not support the video tag.
+        <div class="paper-teaser-video">
+          <video muted autoplay loop playsinline poster="images/instructir.jpeg" aria-label="InstructIR image restoration demo">
+            <source src="images/instructir.mp4" type="video/mp4">
           </video>
-           -->
-          
-          </div>
-
-          <img src='images/instructir.png' width="170" >
         </div>
-        
-        <script type="text/javascript">
-          function inst_start() {
-            document.getElementById('inst_image').style.opacity = "1";
-          }
-
-          function inst_stop() {
-            document.getElementById('inst_image').style.opacity = "0";
-          }
-          inst_stop()
-        </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://mv-lab.github.io/InstructIR/">
-			<span class="papertitle">InstructIR: High-Quality Image Restoration Following Human Instructions</span>
-        </a>
-        <br>
-        <strong>Marcos V. Conde</strong>,
+        <div class="paper-body">
+        <p class="paper-venue">ECCV · 2024</p>
+        <a href="https://mv-lab.github.io/InstructIR/" class="paper-title-link">
+        			<span class="papertitle">InstructIR: High-Quality Image Restoration Following Human Instructions</span>
+                </a>
+        <p class="paper-authors"><span class="author-self">Marcos V. Conde</span>,
         <a href="https://scholar.google.com/citations?user=uIlyqRwAAAAJ&hl=en">Gregor Geigle</a>,
-        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
-        <br>
-        <em>European Conference on Computer Vision (ECCV)</em>, 2024
-        <br>
-        <a href="https://mv-lab.github.io/InstructIR/">project page</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a></p>
+        <p class="paper-links"><a href="https://mv-lab.github.io/InstructIR/">project page</a>
         /
         <a href="https://github.com/mv-lab/InstructIR/">GitHub</a>
         /
@@ -572,13 +584,10 @@ body { margin: 0; background: var(--bg); }
         /
         <a href="https://twitter.com/Gradio/status/1752776176811041049">Twitter X</a>
         /
-        <a href="https://huggingface.co/spaces/marcosv/InstructIR">Demo 🤗</a>
-
-        <p></p>
-        <p>
-          <em><b>InstructIR</b> takes as input a degraded image and a human-written instruction for how to improve that image.</em>
-          The (single) neural model performs all-in-one image restoration. We achieve state-of-the-art results on several restoration tasks including image denoising, deraining, deblurring, dehazing, and (low-light) image enhancement.
-        </p>
+        <a href="https://huggingface.co/spaces/marcosv/InstructIR">Demo 🤗</a></p>
+        <p class="paper-desc"><em><b>InstructIR</b> takes as input a degraded image and a human-written instruction for how to improve that image.</em>
+          The (single) neural model performs all-in-one image restoration. We achieve state-of-the-art results on several restoration tasks including image denoising, deraining, deblurring, dehazing, and (low-light) image enhancement.</p>
+        </div>
       </td>
     </tr>        
 
@@ -607,20 +616,16 @@ body { margin: 0; background: var(--bg); }
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2409.17134">
-			<span class="papertitle">Streaming Neural Images</span>
-        </a>
-        <br>
-        <strong>Marcos V. Conde</strong>, Andy Bigos,
-        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
-        <br>
-        <em>IEEE International Conference on Image Processing (ICIP)</em>, 2024
-        <br>
-        <a href="https://arxiv.org/abs/2409.17134">arXiv</a>
-        <p></p>
-        <p>
-          Implicit Neural Representations (INRs) are a novel paradigm for signal representation that have attracted considerable interest for image compression. We explore the critical yet overlooked limiting factors of INRs, such as computational cost, unstable performance, and robustness
-        </p>
+        <div class="paper-body">
+        <p class="paper-venue">ICIP · 2024</p>
+        <a href="https://arxiv.org/abs/2409.17134" class="paper-title-link">
+        			<span class="papertitle">Streaming Neural Images</span>
+                </a>
+        <p class="paper-authors"><span class="author-self">Marcos V. Conde</span>, Andy Bigos,
+        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a></p>
+        <p class="paper-links"><a href="https://arxiv.org/abs/2409.17134">arXiv</a></p>
+        <p class="paper-desc">Implicit Neural Representations (INRs) are a novel paradigm for signal representation that have attracted considerable interest for image compression. We explore the critical yet overlooked limiting factors of INRs, such as computational cost, unstable performance, and robustness</p>
+        </div>
       </td>
     </tr>
 
@@ -649,20 +654,16 @@ body { margin: 0; background: var(--bg); }
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2409.18204">
-      <span class="papertitle">Toward Efficient Deep Blind RAW Image Restoration</span>
-        </a>
-        <br>
-        <strong>Marcos V. Conde</strong>, Florin Vasluianu,
-        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
-        <br>
-        <em>IEEE International Conference on Image Processing (ICIP)</em>, 2024
-        <br>
-        <a href="https://arxiv.org/abs/2409.18204">arXiv</a>
-        <p></p>
-        <p>
-          We tackle image restoration directly in the RAW domain (yes, it is tricky and a bit crazy).
-        </p>
+        <div class="paper-body">
+        <p class="paper-venue">ICIP · 2024</p>
+        <a href="https://arxiv.org/abs/2409.18204" class="paper-title-link">
+              <span class="papertitle">Toward Efficient Deep Blind RAW Image Restoration</span>
+                </a>
+        <p class="paper-authors"><span class="author-self">Marcos V. Conde</span>, Florin Vasluianu,
+        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a></p>
+        <p class="paper-links"><a href="https://arxiv.org/abs/2409.18204">arXiv</a></p>
+        <p class="paper-desc">We tackle image restoration directly in the RAW domain (yes, it is tricky and a bit crazy).</p>
+        </div>
       </td>
     </tr>
 
@@ -691,24 +692,20 @@ body { margin: 0; background: var(--bg); }
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2404.11569">
-			<span class="papertitle">Simple Image Signal Processing using Global Context Guidance</span>
-        </a>
-        <br>
-        <a href="https://scholar.google.com/citations?user=8v3dYzEAAAAJ&hl=en">Omar Elezabi</a>,
-        <strong>Marcos V. Conde</strong>,
-        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
-        <br>
-        <em>IEEE International Conference on Image Processing (ICIP)</em>, 2024
-        <br>
-        <a href="https://arxiv.org/abs/2404.11569">arXiv</a>
+        <div class="paper-body">
+        <p class="paper-venue">ICIP · 2024</p>
+        <a href="https://arxiv.org/abs/2404.11569" class="paper-title-link">
+        			<span class="papertitle">Simple Image Signal Processing using Global Context Guidance</span>
+                </a>
+        <p class="paper-authors"><a href="https://scholar.google.com/citations?user=8v3dYzEAAAAJ&hl=en">Omar Elezabi</a>,
+        <span class="author-self">Marcos V. Conde</span>,
+        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a></p>
+        <p class="paper-links"><a href="https://arxiv.org/abs/2404.11569">arXiv</a>
         /
-        <a href="https://github.com/mv-lab/AISP">GitHub</a>
-        <p></p>
-        <p>
-          First, we propose a novel module that can be integrated into any neural ISP to capture the global context information from the full RAW images. 
-          Second, we propose an efficient and simple neural ISP that utilizes our proposed module.
-        </p>
+        <a href="https://github.com/mv-lab/AISP">GitHub</a></p>
+        <p class="paper-desc">First, we propose a novel module that can be integrated into any neural ISP to capture the global context information from the full RAW images. 
+          Second, we propose an efficient and simple neural ISP that utilizes our proposed module.</p>
+        </div>
       </td>
     </tr>
 
@@ -740,18 +737,16 @@ body { margin: 0; background: var(--bg); }
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://github.com/mv-lab/nilut">
-          <span class="papertitle">NILUT: Conditional Neural Implicit 3D Lookup Tables for Image Enhancement</span>
-        </a>
-        <br>
-        <strong>Marcos V. Conde</strong>,
+        <div class="paper-body">
+        <p class="paper-venue">AAAI · 2024</p>
+        <a href="https://github.com/mv-lab/nilut" class="paper-title-link">
+                  <span class="papertitle">NILUT: Conditional Neural Implicit 3D Lookup Tables for Image Enhancement</span>
+                </a>
+        <p class="paper-authors"><span class="author-self">Marcos V. Conde</span>,
         <a href="https://scholar.google.com/citations?user=gjnuPMoAAAAJ">Javier Vazquez-Corral</a> ,
         <a href="https://scholar.google.com/citations?user=Gv1QGSMAAAAJ">Michael S. Brown</a>,
-        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
-        <br>
-        <em>AAAI</em>, 2024 &nbsp <font color="red"><strong>(23.75% Acceptance rate)</strong></font>
-        <br>
-        <a href="https://mv-lab.github.io/nilut/">project page</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a></p>
+        <p class="paper-links"><a href="https://mv-lab.github.io/nilut/">project page</a>
         /
         <a href="https://arxiv.org/abs/2306.11920">arXiv</a>
         /
@@ -759,16 +754,14 @@ body { margin: 0; background: var(--bg); }
         /
         <a href="images/nilut/nilut.gif">Video</a>
         /
-        <a href="images/michael_nilut.webp">Easter Egg</a>
-        <p></p>
-        <p>
-          NILUTs are neural representations of real 3D LUTs for controllable photo-realistic image enhancement and color manipulation.
-          Moreover, a NILUT can be extended to incorporate multiple styles into a single network with the ability to blend styles implicitly. 
-        </p>
+        <a href="images/michael_nilut.webp">Easter Egg</a></p>
+        <p class="paper-desc">NILUTs are neural representations of real 3D LUTs for controllable photo-realistic image enhancement and color manipulation.
+          Moreover, a NILUT can be extended to incorporate multiple styles into a single network with the ability to blend styles implicitly.</p>
+        </div>
       </td>
     </tr>
 
-    <!--RTSR 2024-->
+    <!--RTSR 2024 (hidden)
     <tr class="paper-row" onmouseout="piq_stop()" onmouseover="piq_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -776,28 +769,25 @@ body { margin: 0; background: var(--bg); }
         </div>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2404.16484">
-			<span class="papertitle">Real-Time 4K Super-Resolution of Compressed AVIF Images. AIS 2024 Challenge Survey</span>
-        </a>
-        <br>
-        <strong>Marcos V. Conde</strong>,
+        <div class="paper-body">
+        <p class="paper-venue">CVPR Workshop · 2024</p>
+        <a href="https://arxiv.org/abs/2404.16484" class="paper-title-link">
+        			<span class="papertitle">Real-Time 4K Super-Resolution of Compressed AVIF Images. AIS 2024 Challenge Survey</span>
+                </a>
+        <p class="paper-authors"><span class="author-self">Marcos V. Conde</span>,
         Zhijun Lei, Wen Li, Cosmin Stejerean, Ioannis Katsavounidis,
-        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
-        <br>
-        <em>CVPR Workshop</em>, 2024
-        <br>
-        <a href="https://arxiv.org/abs/2404.16484">arXiv</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a></p>
+        <p class="paper-links"><a href="https://arxiv.org/abs/2404.16484">arXiv</a>
         /
-        <a href="https://github.com/eduardzamfir/ntire23-rtsr">GitHub</a>
-        <p></p>
-        <p>
-          Collaboration with Meta. This paper introduces a novel benchmark as part of the AIS 2024 Real-Time Image Super-Resolution (RTSR) Challenge, which aims to upscale compressed images from 540p to 4K resolution (4x factor) in real-time on commercial GPUs.
-          The images are compressed using the modern AVIF codec, instead of JPEG.
-        </p>
+        <a href="https://github.com/eduardzamfir/ntire23-rtsr">GitHub</a></p>
+        <p class="paper-desc">Collaboration with Meta. This paper introduces a novel benchmark as part of the AIS 2024 Real-Time Image Super-Resolution (RTSR) Challenge, which aims to upscale compressed images from 540p to 4K resolution (4x factor) in real-time on commercial GPUs.
+          The images are compressed using the modern AVIF codec, instead of JPEG.</p>
+        </div>
       </td>
     </tr>
+    -->
 
-    <!--PIQ DXO-->
+    <!--PIQ DXO (hidden)
     <tr class="paper-row" onmouseout="piq_stop()" onmouseover="piq_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -805,29 +795,26 @@ body { margin: 0; background: var(--bg); }
         </div>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2404.11159">
-			<span class="papertitle">Deep Portrait Quality Assessment. A NTIRE 2024 Challenge Survey</span>
-        </a>
-        <br>
-        Nicolas Chahine,
-        <strong>Marcos V. Conde</strong>,
+        <div class="paper-body">
+        <p class="paper-venue">CVPR Workshop · 2024</p>
+        <a href="https://arxiv.org/abs/2404.11159" class="paper-title-link">
+        			<span class="papertitle">Deep Portrait Quality Assessment. A NTIRE 2024 Challenge Survey</span>
+                </a>
+        <p class="paper-authors">Nicolas Chahine,
+        <span class="author-self">Marcos V. Conde</span>,
         Daniela Carfora, Gabriel Pacianotto, Benoit Pochon, Sira Ferradans,
-        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
-        <br>
-        <em>CVPR Workshop</em>, 2024
-        <br>
-        <a href="https://arxiv.org/abs/2404.11159">arXiv</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a></p>
+        <p class="paper-links"><a href="https://arxiv.org/abs/2404.11159">arXiv</a>
         /
-        <a href="https://github.com/dxomark-research/piq2023">GitHub</a>
-        <p></p>
-        <p>
-          Collaboration with DXOMARK. This paper reviews the NTIRE 2024 Portrait Quality Assessment Challenge, highlighting the proposed solutions and results. 
-          This challenge aims to obtain an efficient deep neural network capable of estimating the perceptual quality of real portrait photos.
-        </p>
+        <a href="https://github.com/dxomark-research/piq2023">GitHub</a></p>
+        <p class="paper-desc">Collaboration with DXOMARK. This paper reviews the NTIRE 2024 Portrait Quality Assessment Challenge, highlighting the proposed solutions and results. 
+          This challenge aims to obtain an efficient deep neural network capable of estimating the perceptual quality of real portrait photos.</p>
+        </div>
       </td>
     </tr>
+    -->
 
-    <!--BSRAW Challenge-->
+    <!--BSRAW Challenge (hidden)
     <tr class="paper-row" onmouseout="bsrawc_stop()" onmouseover="bsrawc_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -851,25 +838,23 @@ body { margin: 0; background: var(--bg); }
       </td>
 
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://github.com/mv-lab/AISP">
-          <span class="papertitle">Deep RAW Image Super-Resolution. A NTIRE 2024 Challenge Survey</span>
-        </a>
-        <br>
-        <strong>Marcos V. Conde</strong>,
+        <div class="paper-body">
+        <p class="paper-venue">CVPR Workshop · 2024</p>
+        <a href="https://github.com/mv-lab/AISP" class="paper-title-link">
+                  <span class="papertitle">Deep RAW Image Super-Resolution. A NTIRE 2024 Challenge Survey</span>
+                </a>
+        <p class="paper-authors"><span class="author-self">Marcos V. Conde</span>,
         <a href="https://scholar.google.com/citations?hl=es&user=kHHzuyoAAAAJ">Florin Vasluianu</a>,
-        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
-        <br>
-        <em>CVPR Workshop</em>, 2024
-        <br>
-        <a href="https://arxiv.org/abs/2404.16223">arXiv</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a></p>
+        <p class="paper-links"><a href="https://arxiv.org/abs/2404.16223">arXiv</a>
         /
-        <a href="https://github.com/mv-lab/AISP">GitHub</a>
-        <p></p>
-        <p>New methods for RAW Super-Resolution could be essential in modern Image Signal Processing (ISP) pipelines, however, this problem is not as explored as in the RGB domain. 
-          The goal of this challenge is to upscale RAW Bayer images by 2x, considering unknown degradations such as noise and blur.
-        </p>
+        <a href="https://github.com/mv-lab/AISP">GitHub</a></p>
+        <p class="paper-desc">New methods for RAW Super-Resolution could be essential in modern Image Signal Processing (ISP) pipelines, however, this problem is not as explored as in the RGB domain. 
+          The goal of this challenge is to upscale RAW Bayer images by 2x, considering unknown degradations such as noise and blur.</p>
+        </div>
       </td>
     </tr>
+    -->
 
     <!--BSRAW-->
     <tr class="paper-row" onmouseout="bsraw_stop()" onmouseover="bsraw_start()" bgcolor="#ffffd0">
@@ -895,24 +880,21 @@ body { margin: 0; background: var(--bg); }
       </td>
 
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://github.com/mv-lab/AISP">
-          <span class="papertitle">BSRAW: Improving Blind RAW Image Super-Resolution</span>
-        </a>
-        <br>
-        <strong>Marcos V. Conde</strong>,
+        <div class="paper-body">
+        <p class="paper-venue">WACV · 2024</p>
+        <a href="https://github.com/mv-lab/AISP" class="paper-title-link">
+                  <span class="papertitle">BSRAW: Improving Blind RAW Image Super-Resolution</span>
+                </a>
+        <p class="paper-authors"><span class="author-self">Marcos V. Conde</span>,
         <a href="https://scholar.google.com/citations?hl=es&user=kHHzuyoAAAAJ">Florin Vasluianu</a>,
-        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
-        <br>
-        <em>WACV</em>, 2024
-        <br>
-        <a href="https://arxiv.org/abs/2312.15487">arXiv</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a></p>
+        <p class="paper-links"><a href="https://arxiv.org/abs/2312.15487">arXiv</a>
         /
         <a href="https://openaccess.thecvf.com/content/WACV2024/html/Conde_BSRAW_Improving_Blind_RAW_Image_Super-Resolution_WACV_2024_paper.html">cvf Proceedings</a>
         /
-        <a href="https://github.com/mv-lab/AISP">GitHub</a>
-        <p></p>
-        <p>We advance RAW sensor images up-scaling (Super-Resolution). We explore diverse image degradations (e.g. Noise, Blur) to emulate a low-resolution RAW image, and we train a neural network to upsample it.
-        </p>
+        <a href="https://github.com/mv-lab/AISP">GitHub</a></p>
+        <p class="paper-desc">We advance RAW sensor images up-scaling (Super-Resolution). We explore diverse image degradations (e.g. Noise, Blur) to emulate a low-resolution RAW image, and we train a neural network to upsample it.</p>
+        </div>
       </td>
     </tr>
 
@@ -947,28 +929,25 @@ body { margin: 0; background: var(--bg); }
       </td>
 
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/papers/Seizinger_Efficient_Multi-Lens_Bokeh_Effect_Rendering_and_Transformation_CVPRW_2023_paper.pdf">
-          <span class="papertitle">
-            Efficient multi-lens bokeh effect rendering and transformation</span>
-        </a>
-        <br>
-        <a href="https://scholar.google.com/citations?hl=en&user=PKdW78wAAAAJ">Tim Seizinger*</a>,
-        <strong>Marcos V. Conde*</strong>,
+        <div class="paper-body">
+        <p class="paper-venue">CVPR Workshop · 2023</p>
+        <a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/papers/Seizinger_Efficient_Multi-Lens_Bokeh_Effect_Rendering_and_Transformation_CVPRW_2023_paper.pdf" class="paper-title-link">
+                  <span class="papertitle">
+                    Efficient multi-lens bokeh effect rendering and transformation</span>
+                </a>
+        <p class="paper-authors"><a href="https://scholar.google.com/citations?hl=en&user=PKdW78wAAAAJ">Tim Seizinger*</a>,
+        <span class="author-self">Marcos V. Conde*</span>,
         <a href="https://scholar.google.com/citations?hl=en&user=lZDp1vQAAAAJ">Manuel Kolmet</a>,
         <a href="https://scholar.google.com/citations?user=jjF4cMYAAAAJ&hl=en">Tom E Bishop</a>,
-        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
-        <br>
-        <em>CVPR Workshop</em>, 2023
-        <br>
-        <a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/papers/Seizinger_Efficient_Multi-Lens_Bokeh_Effect_Rendering_and_Transformation_CVPRW_2023_paper.pdf">paper</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a></p>
+        <p class="paper-links"><a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/papers/Seizinger_Efficient_Multi-Lens_Bokeh_Effect_Rendering_and_Transformation_CVPRW_2023_paper.pdf">paper</a>
         /
         <a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Seizinger_Efficient_Multi-Lens_Bokeh_Effect_Rendering_and_Transformation_CVPRW_2023_paper.html">cvf Proceedings</a>
         /
-        <a href="https://github.com/mv-lab/AISP">GitHub</a>
-        <p></p>
-        <p>EBokehNet, an efficient state-of-the-art solution for Bokeh effect transformation and rendering. We can render Bokeh from all-in-focus images, 
-          or transform the Bokeh of one lens to the effect of another lens without harming the sharp foreground in the image.
-        </p>
+        <a href="https://github.com/mv-lab/AISP">GitHub</a></p>
+        <p class="paper-desc">EBokehNet, an efficient state-of-the-art solution for Bokeh effect transformation and rendering. We can render Bokeh from all-in-focus images, 
+          or transform the Bokeh of one lens to the effect of another lens without harming the sharp foreground in the image.</p>
+        </div>
       </td>
     </tr>
 
@@ -1003,29 +982,26 @@ body { margin: 0; background: var(--bg); }
       </td>
 
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://eduardzamfir.github.io/NTIRE23-RTSR/">
-          <span class="papertitle">
-            Towards Real-Time 4K Image Super-Resolution</span>
-        </a>
-        <br>
-        <a href="https://scholar.google.com/citations?user=5-FIWKoAAAAJ&hl=en">Eduard Zamfir</a>,
-        <strong>Marcos V. Conde</strong>,
-        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
-        <br>
-        <em>CVPR Workshop</em>, 2023
-        <br>
-        <a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/papers/Zamfir_Towards_Real-Time_4K_Image_Super-Resolution_CVPRW_2023_paper.pdf">paper</a>
+        <div class="paper-body">
+        <p class="paper-venue">CVPR Workshop · 2023</p>
+        <a href="https://eduardzamfir.github.io/NTIRE23-RTSR/" class="paper-title-link">
+                  <span class="papertitle">
+                    Towards Real-Time 4K Image Super-Resolution</span>
+                </a>
+        <p class="paper-authors"><a href="https://scholar.google.com/citations?user=5-FIWKoAAAAJ&hl=en">Eduard Zamfir</a>,
+        <span class="author-self">Marcos V. Conde</span>,
+        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a></p>
+        <p class="paper-links"><a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/papers/Zamfir_Towards_Real-Time_4K_Image_Super-Resolution_CVPRW_2023_paper.pdf">paper</a>
         /
         <a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Zamfir_Towards_Real-Time_4K_Image_Super-Resolution_CVPRW_2023_paper.html">cvf Proceedings</a>
         /
-        <a href="https://github.com/eduardzamfir/NTIRE23-RTSR">GitHub</a>
-        <p></p>
-        <p>The paper presents an exhaustive study of baseline methods for real-time image SR. The methods allow 60 FPS and even 120 FPS.
-        </p>
+        <a href="https://github.com/eduardzamfir/NTIRE23-RTSR">GitHub</a></p>
+        <p class="paper-desc">The paper presents an exhaustive study of baseline methods for real-time image SR. The methods allow 60 FPS and even 120 FPS.</p>
+        </div>
       </td>
     </tr>
 
-    <!--RTSR 2023-->
+    <!--NTIRE 2023 Benchmark (hidden)
     <tr class="paper-row" onmouseout="rtsrc_stop()" onmouseover="rtsrc_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
 
@@ -1036,29 +1012,27 @@ body { margin: 0; background: var(--bg); }
       </td>
 
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://eduardzamfir.github.io/NTIRE23-RTSR/">
-          <span class="papertitle">
-            Efficient Deep Models for Real-Time 4K Image Super-Resolution. NTIRE 2023 Benchmark and Report</span>
-        </a>
-        <br>
-        <strong>Marcos V. Conde</strong>,
+        <div class="paper-body">
+        <p class="paper-venue">CVPR Workshop · 2023</p>
+        <a href="https://eduardzamfir.github.io/NTIRE23-RTSR/" class="paper-title-link">
+                  <span class="papertitle">
+                    Efficient Deep Models for Real-Time 4K Image Super-Resolution. NTIRE 2023 Benchmark and Report</span>
+                </a>
+        <p class="paper-authors"><span class="author-self">Marcos V. Conde</span>,
         <a href="https://scholar.google.com/citations?user=5-FIWKoAAAAJ&hl=en">Eduard Zamfir</a>,
-        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
-        <br>
-        <em>CVPR Workshop</em>, 2023
-        <br>
-        <a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/papers/Conde_Efficient_Deep_Models_for_Real-Time_4K_Image_Super-Resolution._NTIRE_2023_CVPRW_2023_paper.pdf">paper</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a></p>
+        <p class="paper-links"><a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/papers/Conde_Efficient_Deep_Models_for_Real-Time_4K_Image_Super-Resolution._NTIRE_2023_CVPRW_2023_paper.pdf">paper</a>
         /
         <a href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/papers/Conde_Efficient_Deep_Models_for_Real-Time_4K_Image_Super-Resolution._NTIRE_2023_CVPRW_2023_paper.pdf">cvf Proceedings</a>
         /
-        <a href="https://github.com/eduardzamfir/NTIRE23-RTSR">GitHub</a>
-        <p></p>
-        <p>The paper gauges the state-of-the-art methods for real-time 4K upscaling 
+        <a href="https://github.com/eduardzamfir/NTIRE23-RTSR">GitHub</a></p>
+        <p class="paper-desc">The paper gauges the state-of-the-art methods for real-time 4K upscaling 
           using our new dataset and benchmark protocol. Ovr 100 participants joined the challenge and 15 teams proposed diverse solutions.
-          The methods allow 60 FPS and even 120 FPS on regular GPUs.
-        </p>
+          The methods allow 60 FPS and even 120 FPS on regular GPUs.</p>
+        </div>
       </td>
     </tr>
+    -->
 
     <!--LPIENET-->
     <tr class="paper-row" onmouseout="lpienet_stop()" onmouseover="lpienet_start()" bgcolor="#ffffd0">
@@ -1091,27 +1065,24 @@ body { margin: 0; background: var(--bg); }
       </td>
 
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://github.com/mv-lab/AISP">
-          <span class="papertitle">
-            Perceptual Image Enhancement for Smartphone Real-Time Applications</span>
-        </a>
-        <br>
-        <strong>Marcos V. Conde</strong>,
+        <div class="paper-body">
+        <p class="paper-venue">WACV · 2023 &nbsp · (Oral Presentation, Spotlight)</p>
+        <a href="https://github.com/mv-lab/AISP" class="paper-title-link">
+                  <span class="papertitle">
+                    Perceptual Image Enhancement for Smartphone Real-Time Applications</span>
+                </a>
+        <p class="paper-authors"><span class="author-self">Marcos V. Conde</span>,
         <a href="https://scholar.google.com/citations?hl=es&user=kHHzuyoAAAAJ">Florin Vasluianu</a>,
         <a href="https://scholar.google.com/citations?user=gjnuPMoAAAAJ">Javier Vazquez-Corral</a>,
-        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
-        <br>
-        <em>WACV</em>, 2023 &nbsp <font color="red"><strong>(Oral Presentation, Spotlight)</strong></font>
-        <br>
-        <a href="https://arxiv.org/abs/2210.13552">arXiv</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a></p>
+        <p class="paper-links"><a href="https://arxiv.org/abs/2210.13552">arXiv</a>
         /
         <a href="https://openaccess.thecvf.com/content/WACV2023/html/Conde_Perceptual_Image_Enhancement_for_Smartphone_Real-Time_Applications_WACV_2023_paper.html">cvf Proceedings</a>
         /
-        <a href="https://github.com/mv-lab/AISP">GitHub</a>
-        <p></p>
-        <p>We propose LPIENet, a lightweight network for perceptual image enhancement, with the focus on deploying it on smartphones.
-          The model was tested for image denoising, deblurring, and HDR correction.
-        </p>
+        <a href="https://github.com/mv-lab/AISP">GitHub</a></p>
+        <p class="paper-desc">We propose LPIENet, a lightweight network for perceptual image enhancement, with the focus on deploying it on smartphones.
+          The model was tested for image denoising, deblurring, and HDR correction.</p>
+        </div>
       </td>
     </tr>
 
@@ -1146,30 +1117,27 @@ body { margin: 0; background: var(--bg); }
       </td>
 
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/pdf/2209.11345.pdf">
-          <span class="papertitle">
-            Swin2SR: SwinV2 Transformer for Compressed Image Super-Resolution and Restoration</span>
-        </a>
-        <br>
-        <strong>Marcos V. Conde</strong>,
+        <div class="paper-body">
+        <p class="paper-venue">ECCV · 2022</p>
+        <a href="https://arxiv.org/pdf/2209.11345.pdf" class="paper-title-link">
+                  <span class="papertitle">
+                    Swin2SR: SwinV2 Transformer for Compressed Image Super-Resolution and Restoration</span>
+                </a>
+        <p class="paper-authors"><span class="author-self">Marcos V. Conde</span>,
         <a href="https://scholar.google.com/citations?hl=es&user=MMF5LCoAAAAJ">Ui-Jin Choi</a>,
         <a href="https://scholar.google.com/citations?hl=es&user=7S_l2eAAAAAJ">Maxime Burchi</a>,
-        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>
-        <br>
-        <em>ECCV Workshop </em>, 2022
-        <br>
-        <a href="https://arxiv.org/abs/2210.13552">arXiv</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a></p>
+        <p class="paper-links"><a href="https://arxiv.org/abs/2210.13552">arXiv</a>
         /
         <a href="https://link.springer.com/chapter/10.1007/978-3-031-25063-7_42">eccv Proceedings</a>
         /
         <a href="https://github.com/mv-lab/swin2sr">GitHub</a>
         /
-        <a href="https://replicate.com/mv-lab/swin2sr">Demo (3M runs!)</a>
-        <p></p>
-        <p>Super-resolution of compressed images using transformers. 
+        <a href="https://replicate.com/mv-lab/swin2sr">Demo (3M runs!)</a></p>
+        <p class="paper-desc">Super-resolution of compressed images using transformers. 
           We use the Swin Transformer V2, to improve SwinIR for image super-resolution, and in particular, the compressed input scenario.
-          Using this method we can tackle the major issues in training transformer vision models, such as training instability, resolution gaps between pre-training and fine-tuning.
-        </p>
+          Using this method we can tackle the major issues in training transformer vision models, such as training instability, resolution gaps between pre-training and fine-tuning.</p>
+        </div>
       </td>
     </tr>
 
@@ -1204,27 +1172,23 @@ body { margin: 0; background: var(--bg); }
       </td>
 
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/pdf/2210.11153.pdf">
-          <span class="papertitle">
-            Reversed Image Signal Processing and RAW Reconstruction</span>
-        </a>
-        <br>
-        <strong>Marcos V. Conde</strong>,
+        <div class="paper-body">
+        <p class="paper-venue">ECCV Workshop · 2022</p>
+        <a href="https://arxiv.org/pdf/2210.11153.pdf" class="paper-title-link">
+                  <span class="papertitle">
+                    Reversed Image Signal Processing and RAW Reconstruction</span>
+                </a>
+        <p class="paper-authors"><span class="author-self">Marcos V. Conde</span>,
         <a href="https://scholar.google.com/citations?hl=en&user=u3MwH5kAAAAJ">Radu Timofte</a>,
-        <em> et al. </em>
-        <br>
-        <em>ECCV Workshop </em>, 2022
-        <br>
-        <a href="https://arxiv.org/abs/2210.11153">arXiv</a>
+        <em> et al. </em></p>
+        <p class="paper-links"><a href="https://arxiv.org/abs/2210.11153">arXiv</a>
         /
         <a href="https://link.springer.com/chapter/10.1007/978-3-031-25066-8_1">eccv Proceedings</a>
         /
-        <a href="https://github.com/mv-lab/AISP">GitHub</a>
-        <p></p>
-        <p>
-          This paper introduces the AIM 2022 Challenge on Reversed Image Signal Processing and RAW Reconstruction. 
-          We aim to recover raw sensor images from the corresponding RGBs without metadata and, by doing this, "reverse" the ISP transformation.
-        </p>
+        <a href="https://github.com/mv-lab/AISP">GitHub</a></p>
+        <p class="paper-desc">This paper introduces the AIM 2022 Challenge on Reversed Image Signal Processing and RAW Reconstruction. 
+          We aim to recover raw sensor images from the corresponding RGBs without metadata and, by doing this, "reverse" the ISP transformation.</p>
+        </div>
       </td>
     </tr>
 
@@ -1256,30 +1220,26 @@ body { margin: 0; background: var(--bg); }
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://github.com/mv-lab/AISP">
-          <span class="papertitle">Model-Based Image Signal Processors via Learnable Dictionaries</span>
-        </a>
-        <br>
-        <strong>Marcos V. Conde</strong>, 
+        <div class="paper-body">
+        <p class="paper-venue">AAAI · 2022 &nbsp · (Oral Presentation, Spotlight)</p>
+        <a href="https://github.com/mv-lab/AISP" class="paper-title-link">
+                  <span class="papertitle">Model-Based Image Signal Processors via Learnable Dictionaries</span>
+                </a>
+        <p class="paper-authors"><span class="author-self">Marcos V. Conde</span>, 
         <a href="https://scholar.google.com/citations?user=k8-q2AoAAAAJ&hl=en">Steven McDonagh</a>,
         <a href="https://scholar.google.com/citations?hl=en&user=Zo97gUQAAAAJ">Matteo Maggioni</a> ,
         <a href="https://www.cs.bham.ac.uk/~leonarda/">Aleš Leonardis</a>, 
-        <a href="http://perezpellitero.github.io/">Eduardo Pérez-Pellitero</a>
-        <br>
-        <em>AAAI</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation, Spotlight)</strong></font>
-        <br>
-        <a href="https://github.com/mv-lab/AISP">project page</a>
+        <a href="http: / perezpellitero.github.io/">Eduardo Pérez-Pellitero</a></p>
+        <p class="paper-links"><a href="https://github.com/mv-lab/AISP">project page</a>
         /
         <a href="https://github.com/mv-lab/AISP">GitHub</a>
         /
         <a href="https://arxiv.org/abs/2201.03210">arXiv</a>
         /
-        <a href="images/misp/misp.png">Poster</a>
-        <p></p>
-        <p>
-          Hybrid model-based and data-driven approach for modelling ISPs using learnable dictionaries. 
-          We explore RAW image reconstruction and improve downstream tasks like RAW Image Denoising via raw data augmentation-synthesis.
-        </p>
+        <a href="images/misp/misp.png">Poster</a></p>
+        <p class="paper-desc">Hybrid model-based and data-driven approach for modelling ISPs using learnable dictionaries. 
+          We explore RAW image reconstruction and improve downstream tasks like RAW Image Denoising via raw data augmentation-synthesis.</p>
+        </div>
       </td>
     </tr>
 
@@ -1293,26 +1253,22 @@ body { margin: 0; background: var(--bg); }
       </td>
 
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2204.14244">
-          <span class="papertitle">CLIP-Art: Contrastive Pre-Training for Fine-Grained Art Classification</span>
-        </a>
-        <br>
-        <strong>Marcos V. Conde</strong>,
-        <a href="https://scholar.google.com/citations?user=4kdpidQAAAAJ&hl=en">Kerem Turgutlu</a>
-        <br>
-        <em>CVPR Workshop</em>, 2021
-        <br>
-        <a href="https://arxiv.org/abs/2204.14244">arXiv</a>
+        <div class="paper-body">
+        <p class="paper-venue">CVPR Workshop · 2021</p>
+        <a href="https://arxiv.org/abs/2204.14244" class="paper-title-link">
+                  <span class="papertitle">CLIP-Art: Contrastive Pre-Training for Fine-Grained Art Classification</span>
+                </a>
+        <p class="paper-authors"><span class="author-self">Marcos V. Conde</span>,
+        <a href="https://scholar.google.com/citations?user=4kdpidQAAAAJ&hl=en">Kerem Turgutlu</a></p>
+        <p class="paper-links"><a href="https://arxiv.org/abs/2204.14244">arXiv</a>
         /
         <a href="https://openaccess.thecvf.com/content/CVPR2021W/CVFAD/html/Conde_CLIP-Art_Contrastive_Pre-Training_for_Fine-Grained_Art_Classification_CVPRW_2021_paper.html">cvpr Proceedings</a>
         /
         <a href="https://github.com/KeremTurgutlu/self_supervised">GitHub</a>
         /
-        <a href="https://www.kaggle.com/c/imet-2021-fgvc8">Kaggle</a>
-        <p></p>
-        <p>
-          We were one of the 1st attempts to use CLIP (Contrastive Language-Image Pre-Training) for training a neural network on a variety of art images and descriptions, being able to learn directly from raw descriptions about images, or if available, curated labels.
-        </p>
+        <a href="https://www.kaggle.com/c/imet-2021-fgvc8">Kaggle</a></p>
+        <p class="paper-desc">We were one of the 1st attempts to use CLIP (Contrastive Language-Image Pre-Training) for training a neural network on a variety of art images and descriptions, being able to learn directly from raw descriptions about images, or if available, curated labels.</p>
+        </div>
       </td>
     </tr>
 

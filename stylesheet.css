@@ -368,10 +368,105 @@ h2 {
   line-height: 1.65;
 }
 
+.papers-table .papertitle {
+  font-family: var(--font-serif);
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: -0.012em;
+  line-height: 1.4;
+}
+
 .papertitle {
   font-family: var(--font-serif);
-  font-size: 16px;
+  font-size: 1.02rem;
   font-weight: 700;
+  letter-spacing: -0.012em;
+  line-height: 1.4;
+}
+
+/* Paper rows — Option B hybrid (lab accent + A hover + C/D venue type) */
+.papers-table .paper-body {
+  min-width: 0;
+}
+
+.papers-table .paper-venue {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--link-hover);
+  line-height: 1.35;
+}
+
+.papers-table .paper-venue em {
+  font-style: normal;
+}
+
+.papers-table .paper-title-link {
+  display: inline;
+  color: var(--text);
+  text-decoration: none;
+  background-image: linear-gradient(var(--link-hover), var(--link-hover));
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size 0.25s ease, color 0.2s ease;
+}
+
+.papers-table .paper-title-link:hover,
+.papers-table .paper-title-link:focus {
+  color: var(--link-hover);
+  background-size: 100% 2px;
+}
+
+.papers-table .paper-authors {
+  margin: 0.35rem 0 0;
+  font-family: var(--font-serif);
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.papers-table .author-self {
+  font-weight: 500;
+  color: var(--text);
+  background: linear-gradient(to top, rgba(196, 165, 116, 0.38) 42%, transparent 42%);
+}
+
+.papers-table .paper-links {
+  margin: 0.45rem 0 0;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.papers-table .paper-links a {
+  color: var(--text-muted);
+  text-decoration: underline;
+  text-decoration-color: var(--link-muted);
+  text-underline-offset: 3px;
+}
+
+.papers-table .paper-links a:hover,
+.papers-table .paper-links a:focus {
+  color: var(--link-hover);
+  text-decoration-color: var(--link-hover);
+}
+
+.papers-table .paper-desc {
+  margin: 0.6rem 0 0;
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.papers-table .paper-desc em {
+  font-style: italic;
 }
 
 strong {
