@@ -1,0 +1,330 @@
+:root {
+    --ink: #1a1623;
+    --paper: #f7f2e9;
+    --paper-2: #efe7d6;
+    --red: #e3392f;
+    --red-deep: #b32419;
+    --indigo: #2a2a4a;
+    --gold: #d9a441;
+    --line: #d8cdb6;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Zen Maru Gothic', system-ui, sans-serif;
+    color: var(--ink);
+    background-color: var(--paper);
+    background-image:
+        radial-gradient(circle at 1px 1px, rgba(26,22,35,0.06) 1px, transparent 0);
+    background-size: 22px 22px;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* Retro rising sun behind hero */
+.sun {
+    position: absolute;
+    top: -180px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--red) 0%, var(--red) 60%, var(--red-deep) 100%);
+    opacity: 0.10;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 64px 24px 40px;
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.kana {
+    font-family: 'Shippori Mincho', serif;
+    letter-spacing: 0.5em;
+    color: var(--red);
+    font-size: 0.9rem;
+    margin-bottom: 18px;
+    opacity: 0.85;
+}
+
+.venue {
+    display: inline-block;
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    color: var(--paper);
+    background: var(--indigo);
+    padding: 6px 14px;
+    border-radius: 2px;
+    margin-bottom: 22px;
+    max-width: 100%;
+    line-height: 1.4;
+}
+
+.title {
+    font-family: 'Zen Dots', sans-serif;
+    font-size: clamp(2.6rem, 8vw, 4.6rem);
+    line-height: 1;
+    letter-spacing: 0.01em;
+    color: var(--ink);
+}
+
+.title .six {
+    color: var(--red);
+}
+
+.subtitle {
+    font-family: 'Shippori Mincho', serif;
+    font-size: clamp(1rem, 2.4vw, 1.25rem);
+    margin-top: 18px;
+    color: #4a4357;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 32px;
+}
+
+.download-btn {
+    display: inline-block;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    color: var(--paper);
+    background: var(--red);
+    padding: 14px 38px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 0 var(--ink);
+    transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.2s ease;
+}
+
+.download-btn:hover {
+    background: var(--red-deep);
+    transform: translate(2px, 2px);
+    box-shadow: 3px 3px 0 var(--ink);
+}
+
+.paper-chip {
+    display: inline-block;
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-decoration: none;
+    color: var(--ink);
+    background: var(--paper-2);
+    border: 2px solid var(--ink);
+    padding: 12px 22px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 0 var(--ink);
+    transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.2s ease;
+}
+
+.paper-chip:hover {
+    background: var(--paper);
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 var(--ink);
+}
+
+/* ---------- Sections ---------- */
+main {
+    position: relative;
+    z-index: 1;
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.teaser {
+    margin: 28px 0 56px;
+}
+
+.teaser img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 3px solid var(--ink);
+    border-radius: 4px;
+    box-shadow: 8px 8px 0 rgba(26,22,35,0.12);
+}
+
+.caption {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 0.85rem;
+    color: #6a6276;
+    text-align: center;
+    margin-top: 14px;
+    font-style: italic;
+}
+
+.block {
+    margin: 0 0 64px;
+}
+
+h2 {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--line);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.mark {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.25rem;
+    color: var(--paper);
+    background: var(--red);
+    padding: 4px 10px;
+    border-radius: 3px;
+    line-height: 1;
+}
+
+.block p {
+    margin-bottom: 16px;
+    font-size: 1.02rem;
+}
+
+/* ---------- Metrics ---------- */
+.metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.metric {
+    background: var(--paper-2);
+    border: 2px solid var(--ink);
+    border-radius: 4px;
+    text-align: center;
+    padding: 18px 8px;
+}
+
+.metric .val {
+    display: block;
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 1.5rem;
+    color: var(--red);
+}
+
+.metric .lbl {
+    display: block;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    color: #4a4357;
+    margin-top: 6px;
+}
+
+/* ---------- Challenge ---------- */
+.challenge-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 24px;
+    align-items: center;
+}
+
+.challenge-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid var(--ink);
+    border-radius: 4px;
+    box-shadow: 6px 6px 0 rgba(26,22,35,0.12);
+}
+
+.prizes {
+    font-weight: 700;
+    color: var(--red-deep);
+}
+
+/* ---------- Related ---------- */
+.related-list {
+    list-style: none;
+}
+
+.related-list li {
+    background: var(--paper-2);
+    border-left: 5px solid var(--red);
+    padding: 14px 18px;
+    border-radius: 0 4px 4px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.related-list li + li {
+    margin-top: 12px;
+}
+
+.related-list a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+.related-list a:hover {
+    border-bottom-color: var(--red);
+}
+
+.badge {
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    color: var(--paper);
+    background: var(--indigo);
+    padding: 4px 9px;
+    border-radius: 2px;
+    white-space: nowrap;
+}
+
+/* ---------- Dataset notice ---------- */
+.dataset-notice {
+    font-size: 0.75rem;
+    line-height: 1.55;
+    color: #6a6276;
+    text-align: center;
+    max-width: 640px;
+    margin: -32px auto 48px;
+    padding: 0 8px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 40px 24px 56px;
+    border-top: 2px solid var(--line);
+    margin-top: 24px;
+    font-size: 0.9rem;
+    color: #6a6276;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 640px) {
+    .metrics { grid-template-columns: repeat(2, 1fr); }
+    .challenge-grid { grid-template-columns: 1fr; }
+    .sun { width: 340px; height: 340px; top: -120px; }
+}

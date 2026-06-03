@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-Anime600 — A Curated Benchmark for Anime Video Quality Assessment & Super-Resolution</title>
+    <meta name="description" content="Re-Anime600: A curated benchmark of 600 high-fidelity anime video clips for No-Reference Image/Video Quality Assessment (NR-IQA) and super-resolution evaluation. CVPR 2026.">
+    <meta name="author" content="Marcos V. Conde">
+    <meta name="keywords" content="Re-Anime600, Anime, Super-Resolution, Video Quality Assessment, NR-IQA, NIQE, MANIQA, CLIPIQA, HyperIQA, Sakuga-42M, CVPR 2026, Benchmark, Dataset">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mv-lab.github.io/reanime/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Re-Anime600 — Anime Video Quality & Super-Resolution Benchmark">
+    <meta property="og:description" content="A curated benchmark of 600 high-fidelity anime video clips for NR-IQA and super-resolution evaluation. CVPR 2026.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mv-lab.github.io/reanime/">
+    <meta property="og:image" content="https://mv-lab.github.io/reanime/imgs/teaser.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Re-Anime600 — Anime Video Quality & Super-Resolution Benchmark">
+    <meta name="twitter:description" content="A curated benchmark of 600 high-fidelity anime video clips for NR-IQA and super-resolution evaluation. CVPR 2026.">
+    <meta name="twitter:image" content="https://mv-lab.github.io/reanime/imgs/teaser.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Zen+Dots&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sun"></div>
+
+    <header class="hero">
+        <p class="kana" aria-hidden="true">リアニメ・ベンチマーク</p>
+        <p class="venue">CVPR 2026 - AIGENS Workshop</p>
+        <h1 class="title">Re-Anime<span class="six">600</span></h1>
+        <p class="subtitle">A Curated Benchmark Dataset for Anime Video Quality Assessment<br>and Super-Resolution Evaluation</p>
+        <div class="hero-actions">
+            <a class="download-btn" href="mailto:marcos.conde@uni-wuerzburg.de?subject=Re-Anime600%20Dataset%20Request">Download Dataset ↓</a>
+            <a class="paper-chip" href="https://openaccess.thecvf.com/content/CVPR2026W/AIGENS/papers/Fargetta_Re-Anime600_A_Curated_Benchmark_Dataset_for_Anime_Video_Quality_Assessment_CVPRW_2026_paper.pdf" target="_blank" rel="noopener">Paper</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="teaser">
+            <img src="imgs/teaser.png" alt="Re-Anime600 dataset samples across NIQE, MANIQA, CLIPIQA and HyperIQA quality axes (low / median / high)">
+            <p class="caption">Representative clips spanning low, median and high quality scores across four NR-IQA axes (NIQE, MANIQA, CLIPIQA, HyperIQA).</p>
+        </section>
+
+        <section class="block" id="abstract">
+            <h2><span class="mark">概要</span> Mission</h2>
+            <p>
+                Anime video super-resolution (SR) is a challenging and increasingly relevant problem, yet the field lacks a
+                dedicated, high-quality benchmark for rigorous evaluation. Existing datasets often re-purpose general-purpose
+                IQA corpora with limited domain coverage or rely on small, manually curated collections insufficient for robust
+                model comparison. We introduce <b>Re-Anime600</b>, a curated benchmark of 600 high-fidelity anime video clips
+                specifically designed for No-Reference Image/Video Quality Assessment (NR-IQA) and super-resolution evaluation.
+            </p>
+            <p>
+                Sourced from the large-scale <b>Sakuga-42M</b> corpus, Re-Anime600 is constructed through a rigorous multi-metric
+                filtering pipeline, integrating <b>NIQE</b>, <b>MANIQA</b>, and <b>CLIPIQA</b>, to identify clips with native
+                perceptual quality superior to existing SOTA outputs. Each clip is accompanied by extensive spatial, temporal,
+                frequency, and color descriptors, facilitating fine-grained analysis across diverse animation styles and motion
+                regimes.
+            </p>
+            <p>
+                We provide a comprehensive evaluation of state-of-the-art anime SR models (e.g., Real-ESRGAN, BSRGAN, AnimeSR,
+                APISR), establishing strong baselines across all major NR-IQA axes. Notably, Re-Anime600 provides source material
+                that consistently outperforms uncurated benchmarks, achieving best-in-class scores. We release the dataset and
+                evaluation metadata to promote reproducible research in stylized video restoration.
+            </p>
+
+            <div class="metrics">
+                <div class="metric"><span class="val">4.572</span><span class="lbl">NIQE</span></div>
+                <div class="metric"><span class="val">0.519</span><span class="lbl">MANIQA</span></div>
+                <div class="metric"><span class="val">0.722</span><span class="lbl">CLIPIQA</span></div>
+                <div class="metric"><span class="val">0.682</span><span class="lbl">HyperIQA</span></div>
+            </div>
+        </section>
+
+        <section class="block challenge" id="challenge">
+            <h2><span class="mark">挑戦</span> Challenge @ ACCV 2026</h2>
+            <div class="challenge-grid">
+                <img src="imgs/challenge.jpg" alt="Video anime restoration and super-resolution example">
+                <div class="challenge-text">
+                    <p>
+                        A <b>Video Anime Restoration</b> challenge is planned for <b>ACCV 2026</b> — bringing together the community
+                        to push the limits of stylized video super-resolution and quality assessment on Re-Anime600.
+                    </p>
+                    <p class="prizes">Featuring nice prizes for the top teams. Stay tuned! 🏆</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="block" id="related">
+            <h2><span class="mark">関連</span> Related Work</h2>
+            <ul class="related-list">
+                <li>
+                    <a href="https://cvpr.thecvf.com/virtual/2024/poster/30191" target="_blank" rel="noopener">
+                        <b>APISR</b> — Anime Production Inspired Real-World Super-Resolution</a>
+                    <span class="badge">CVPR 2024</span>
+                </li>
+                <li>
+                    <a href="https://arxiv.org/abs/2206.07038" target="_blank" rel="noopener">
+                        <b>AnimeSR</b> — Learning Real-World Super-Resolution Models for Animation Videos</a>
+                    <span class="badge">NeurIPS 2022</span>
+                </li>
+            </ul>
+        </section>
+
+        <p class="dataset-notice">
+            <b>Notice.</b> We do not own the copyright of all content in this dataset. Re-Anime600 is released for
+            <b>research purposes only</b>. Copyright holders may contact us to request removal of specific material.
+        </p>
+    </main>
+
+    <footer>
+        <p>Re-Anime600 · CVPR 2026 - AIGENS Workshop</p>
+        <p>Contact: marcos.conde (at) uni-wuerzburg.de</p>
+    </footer>
+</body>
+</html>
