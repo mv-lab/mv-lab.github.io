@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agentic Perception and Imaging · ACCV 2026 Tutorial</title>
+  <meta name="description" content="Agentic Perception and Imaging — ACCV 2026 half-day tutorial on neural ISPs, controllable imaging, cameras, and perception. 2nd edition of the ICCV 2025 neural imaging tutorial.">
+  <meta name="author" content="Marcos V. Conde">
+  <meta name="keywords" content="Neural ISP, Computational Photography, Controllable Imaging, VLMs, Cameras, RAW, ACCV 2026, Tutorial, Agentic Perception">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mv-lab.github.io/agimaging/">
+
+  <meta property="og:title" content="Agentic Perception and Imaging · ACCV 2026 Tutorial">
+  <meta property="og:description" content="Half-day ACCV 2026 tutorial on neural ISPs, controllable imaging, and camera-aware perception — Osaka, Japan.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mv-lab.github.io/agimaging/">
+  <meta property="og:image" content="https://mv-lab.github.io/agimaging/imgs/banner.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Agentic Perception and Imaging · ACCV 2026 Tutorial">
+  <meta name="twitter:description" content="Half-day ACCV 2026 tutorial on neural ISPs, controllable imaging, and camera-aware perception.">
+  <meta name="twitter:image" content="https://mv-lab.github.io/agimaging/imgs/banner.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,650;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,450;0,9..144,550;1,9..144,450&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-media" aria-hidden="true">
+      <img src="imgs/banner.png" alt="">
+    </div>
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-kicker">ACCV 2026 · OSAKA, JAPAN</p>
+      <h1>Agentic Perception and&nbsp;Imaging</h1>
+      <p class="hero-edition">Tutorial · 2nd Edition</p>
+      <div class="hero-meta">
+        <div class="whenwhere">
+          <span class="chip">15 December 2026</span>
+          <span class="chip">Room TBD</span>
+          <span class="chip">Half-day Morning</span>
+        </div>
+        <p class="tagline">From neural ISPs to controllable imaging models for people, creators, and perception systems.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container" id="about">
+      <h2>About</h2>
+      <div class="about-body">
+        <figure class="about-photo">
+          <img src="imgs/osaka.webp" alt="Dotonbori, Osaka, Japan — ACCV 2026">
+        </figure>
+        <p class="lead">
+          <b>Imaging is no longer just about prettier pictures.</b>
+          Phones, robots, drones, and wearables must capture reliable visual evidence under tight hardware limits—and expose images that people <em>and</em> AI systems can actually use.
+        </p>
+        <p class="lead" style="margin-top:0.85rem;">
+          Yet neural ISPs and generative imaging models are often hard to steer.
+          A noisy RAW frame, a lens aberration, or a poorly controlled enhancement can break not only image quality, but recognition, planning, and action.
+          The camera pipeline is now part of the intelligence stack.
+        </p>
+        <p class="lead" style="margin-top:0.85rem;">
+          This half-day ACCV tutorial connects <b>neural ISPs</b>, <b>controllable generative models</b>, <b>cameras</b>, and <b>active perception</b> into a practical course.
+          Leave with a clear map of the field—and concrete recipes for imaging that is beautiful, steerable, and useful for VLM/VLA systems.
+        </p>
+        <div class="series">
+          <p>
+            Updated 2nd edition of the
+            <a href="https://mv-lab.github.io/neuralisp-iccv25/" target="_blank" rel="noopener">ICCV 2025 tutorial</a>
+            <em>A Tour Through AI-powered Photography and Imaging</em>
+            (100+ in-person attendees).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="topics">
+      <h2>What You Will Learn</h2>
+      <p>Five practical questions guide the course:</p>
+      <ul class="topic-grid">
+        <li><b>What should a camera expose to AI?</b> — RAW, metadata, bursts, uncertainty</li>
+        <li><b>How do neural ISPs work in practice?</b> — restoration, rendering, deployment</li>
+        <li><b>How to co-design optics and AI?</b> — aberrations, compact cameras, sensors</li>
+        <li><b>How do imaging models become controllable?</b> — language, intent, smart cameras</li>
+        <li><b>How should we evaluate imaging?</b> — perception, latency, energy, failures</li>
+        <li><b>How to close the loop?</b> — sense, process, verify, refine with agents</li>
+      </ul>
+    </section>
+
+    <section class="container" id="schedule">
+      <h2>Tentative Schedule</h2>
+      <p class="muted"> 15 December 2026 · Half-day · Morning · times local to Osaka.</p>
+      <p class="muted"> Tutorial topics are still being finalized. A tentative schedule is provided below.</p>
+      <table class="schedule">
+        <tr><td>09:00 – 09:10</td><td>Welcome: from neural ISPs to controllable imaging models</td></tr>
+        <tr><td>09:10 – 09:45</td><td>RAW sensing, metadata, bursts, camera failure modes — why RGB is not enough</td></tr>
+        <tr><td>09:45 – 10:20</td><td>Neural ISPs: restoration, rendering, controllability, and deployment</td></tr>
+        <tr class="break"><td>10:20 – 10:30</td><td>Short break</td></tr>
+        <tr><td>10:30 – 11:05</td><td>AI + optics: compact cameras, aberrations, and sensor imperfections</td></tr>
+        <tr><td>11:05 – 11:40</td><td>Smart cameras for robots: RAW perception, VLMs/VLAs, and edge AI</td></tr>
+        <tr><td>11:40 – 12:15</td><td>Controllable imaging loops: sense, process, verify, and refine</td></tr>
+        <tr><td>12:15 – 12:45</td><td>Hands-on demo &amp; evaluation: image quality, task quality, latency, failures</td></tr>
+        <tr><td>12:45 – 13:00</td><td>Open challenges, industry lessons, research opportunities, and Q&amp;A</td></tr>
+      </table>
+      <p class="note">Speaker lineup will expand as confirmations finalize. Slides, notebooks, and demo code will be linked here.</p>
+    </section>
+
+    <section class="container" id="materials">
+      <h2>Materials</h2>
+      <p>We will release an open teaching package before / after the tutorial:</p>
+      <ul class="materials">
+        <li>Lecture slides and reading lists for each session</li>
+        <li>Executable notebooks for RAW processing, neural ISP inference, and evaluation</li>
+        <li>Starter code based on the open-source AISP repository</li>
+        <li>Links to demo data and the previous <a href="https://mv-lab.github.io/neuralisp-iccv25/" target="_blank" rel="noopener">ICCV 2025 slides</a></li>
+      </ul>
+    </section>
+
+    <section class="container" id="organizer">
+      <h2>Organizers</h2>
+      <div class="speaker-card">
+        <a class="speaker-photo" href="https://mv-lab.github.io/" target="_blank" rel="noopener">
+          <img src="imgs/marcos.jpg" alt="Marcos V. Conde">
+        </a>
+        <div class="speaker-bio">
+          <h3>Marcos V. Conde</h3>
+          <p class="speaker-affil">Tenkai AI · Computer Vision Lab, University of Würzburg</p>
+          <p>
+            Co-founder of Tenkai AI and postdoc at CVL with Prof. Radu Timofte.
+            He obtained the Ph.D. degree from the Computer Vision Lab, University of Würzburg, in 2025.
+            Previously, he was Research Intern at Huawei Noah’s Ark Lab working on low-level computer vision, and Computer Vision Scientist at Sony PlayStation working on compression, super-resolution, and graphics enhancement.
+            He is Co-organizer of the New Trends in Image Restoration and Enhancement (NTIRE) Workshop at CVPR 2023–2026;
+            Co-organizer of the Advances in Image Manipulation (AIM) Workshop at ECCV 2022 and ICCV 2025;
+            Organizer of the AI for Streaming (AIGENS) Workshop at CVPR 2024–2026;
+            Organizer of the “Smart Cameras for Smarter Robots” Workshop at BMVC 2025-2026;
+            and Host of the Tutorial “A Tour Through AI-powered Photography and Imaging” at ICCV 2025.
+            His research interests include computational photography, low-level computer vision, imaging, and robotics.
+          </p>
+          <p class="speaker-contact">
+            <a href="mailto:marcos.conde@uni-wuerzburg.de">marcos.conde@uni-wuerzburg.de</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="references">
+      <h2>References</h2>
+      <p class="muted" style="margin-bottom:0.4rem;">Core readings for the tutorial (and great starting points afterward).</p>
+      <ol class="references-list">
+        <li>
+          Conde, M.V., Lu, Z., Timofte, R.
+          <a href="https://openaccess.thecvf.com/content/ICCV2025/html/Conde_PixTalk_Controlling_Photorealistic_Image_Processing_and_Editing_with_Language_ICCV_2025_paper.html" target="_blank" rel="noopener">PixTalk: Controlling Photorealistic Image Processing and Editing with Language</a>.
+          ICCV, 2025.
+        </li>
+        <li>
+          Conde, M.V., et al.
+          <a href="https://arxiv.org/abs/2401.16468" target="_blank" rel="noopener">InstructIR: High-Quality Image Restoration Following Human Instructions</a>.
+          ECCV, 2024.
+        </li>
+        <li>
+          Conde, M.V., Timofte, R., et al.
+          <a href="https://arxiv.org/abs/2201.03210" target="_blank" rel="noopener">Model-Based Image Signal Processors via Learnable Dictionaries</a>.
+          AAAI, 2022.
+        </li>
+        <li>
+          Seizinger, T., et al.
+          <a href="https://arxiv.org/abs/2503.16067" target="_blank" rel="noopener">Bokehlicious: Photorealistic Bokeh Rendering with Controllable Apertures</a>.
+          ICCV, 2025.
+        </li>
+        <li>
+          Conde, M.V., et al.
+          <a href="https://arxiv.org/abs/2306.11920" target="_blank" rel="noopener">NILUT: Conditional Neural Implicit 3D Lookup Tables for Image Enhancement</a>.
+          AAAI, 2024.
+        </li>
+        <li>
+          Brown, M.S.
+          <a href="https://www.eecs.yorku.ca/~mbrown/ICCV2023_Brown.html" target="_blank" rel="noopener">Understanding the In-Camera Rendering Pipeline and the Role of AI/Deep Learning</a>.
+          ICCV 2023 Tutorial.
+        </li>
+        <li>
+          Brown, M.S.
+          <a href="https://neurips.cc/virtual/2025/loc/san-diego/131941" target="_blank" rel="noopener">Transitioning to the Neural ISP</a>.
+          NeurIPS 2025 Keynote.
+        </li>
+        <li>
+          Glass Imaging
+          <a href="https://arxiv.org/abs/2606.07675" target="_blank" rel="noopener">The Need for Neural ISP in the Small-Pixel Era</a>.
+          arXiv, 2026.
+        </li>
+        <li>
+          Cui, Z., Harada, T.
+          <a href="https://arxiv.org/abs/2408.14802" target="_blank" rel="noopener">RAW-Adapter: Adapting Pre-trained Visual Model to Camera RAW Images</a>.
+          ECCV, 2024.
+        </li>
+        <li>
+          Delbracio, M., Kelly, D., Brown, M.S., Milanfar, P.
+          <a href="https://arxiv.org/abs/2102.09000" target="_blank" rel="noopener">Mobile Computational Photography: A Tour</a>.
+          Annual Review of Vision Science, 2021.
+        </li>
+        <li>
+          Conde, M.V., et al.
+          <a href="https://mv-lab.github.io/neuralisp-iccv25/" target="_blank" rel="noopener">A Tour Through AI-powered Photography and Imaging</a>.
+          ICCV 2025 Tutorial (1st edition).
+        </li>
+        <li>
+          Conde, M.V., et al.
+          <a href="https://supercamerai.github.io" target="_blank" rel="noopener">Smart Cameras for Smarter Autonomous Vehicles and Robots</a>.
+          BMVC 2025 Workshop.
+        </li>
+        <li>
+          Conde, M.V., et al.
+          <a href="https://mv-lab.github.io/pimaging/" target="_blank" rel="noopener">Imaging for Physical AI, 2nd Edition</a>.
+          ACCV 2026 Workshop.
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a href="https://accv2026.org/" target="_blank" rel="noopener">
+        <img class="accv-logo" src="imgs/accv-logo.png" alt="ACCV 2026 Osaka">
+      </a>
+      <p>
+        Agentic Perception and Imaging · Tutorial at
+        <a href="https://accv2026.org/" target="_blank" rel="noopener">ACCV 2026</a>, Osaka.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
