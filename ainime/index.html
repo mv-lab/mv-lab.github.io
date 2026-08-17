@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AINIME · AI for Animation · WACV 2027 Workshop</title>
+  <meta name="description" content="AINIME — the first WACV workshop on AI for Animation: anime restoration, image-to-video, motion control, and evaluation. Disney Springs, January 2027.">
+  <meta name="author" content="Marcos V. Conde, Georgia Fargetta">
+  <meta name="keywords" content="AINIME, AI for Animation, WACV 2027, Anime, Image-to-Video, Video Diffusion, Restoration, Re-Anime600">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mv-lab.github.io/ainime/">
+
+  <meta property="og:title" content="AINIME · AI for Animation · WACV 2027">
+  <meta property="og:description" content="The first workshop on AI for Animation — traditional anime and natural image-to-video. WACV 2027, Disney Springs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mv-lab.github.io/ainime/">
+  <meta property="og:image" content="https://mv-lab.github.io/ainime/imgs/banner.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AINIME · AI for Animation · WACV 2027">
+  <meta name="twitter:description" content="The first workshop on AI for Animation — anime + natural I2V. WACV 2027, Disney Springs.">
+  <meta name="twitter:image" content="https://mv-lab.github.io/ainime/imgs/banner.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Zen+Dots&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sun" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div class="hero-media" aria-hidden="true">
+      <img src="imgs/banner.jpg" alt="">
+    </div>
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="kana">アニメーションのためのAI</p>
+      <p class="hero-kicker">WACV 2027 · DISNEY SPRINGS, FL</p>
+      <h1>AINIME</h1>
+      <p class="hero-edition">AI for Animation · 1st Edition</p>
+      <div class="hero-meta">
+        <div class="whenwhere">
+          <span class="chip">January 4–5, 2027</span>
+          <span class="chip">Half-day</span>
+          <span class="chip">In-person &amp; virtual</span>
+        </div>
+        <p class="tagline">From generating images to animating a photograph or generating video from text — a venue for generation, control, and evaluation of Animation.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container" id="about">
+      <h2><span class="mark">概要</span> About</h2>
+      <p class="lead">
+        <b>Animation is no longer only hand-drawn anime.</b>
+        Models can now animate a still photo or synthesize stylized sequences — yet we still lack shared answers:
+        How do we assess natural movement versus generated movement?
+        What benchmarks capture temporal coherence, identity, and style?
+        How do we control motion and animation with diffusion models and world models?
+      </p>
+      <p class="lead" style="margin-top:0.9rem;">
+        <b>AINIME</b> is, to our knowledge, the first workshop on this dual agenda: traditional anime/manga <em>and</em> natural-video animation.
+        Creators need the tools; researchers need the venue.
+        We bring generation, post-production, restoration, and quality evaluation onto one WACV stage — with a flagship
+        <a href="https://mv-lab.github.io/reanime/" target="_blank" rel="noopener">Anime Restoration Challenge on Re-Anime600</a>.
+      </p>
+      <div class="series">
+        <p>
+          Built on the <a href="https://mv-lab.github.io/reanime/" target="_blank" rel="noopener">Re-Anime600</a> dataset 
+          and the <b>AIGENS</b> workshop at CVPR 2026.
+        </p>
+      </div>
+    </section>
+
+    <section class="container" id="cfp">
+      <h2><span class="mark">募集</span> Call for Papers</h2>
+      <p>
+        We cover the whole production pipeline — from generation and post-processing to restoration and quality evaluation of
+        <b>natural and anime-style</b> videos.
+      </p>
+      <ul class="topic-grid">
+        <li><b>Image-/text-to-video animation</b> — natural and stylized</li>
+        <li><b>Motion control</b> — diffusion models and world models</li>
+        <li><b>Natural movement vs. animation</b> — new metrics and studies</li>
+        <li><b>Benchmarks &amp; datasets</b> — temporal quality, identity, style</li>
+        <li><b>Anime post-production</b> — restoration, upscaling, colorization</li>
+        <li><b>Responsible creative AI</b> — authorship, consent, production tools</li>
+      </ul>
+      <p class="cfp-format">
+        <b>Regular papers, 5–8 pages</b> (excl. references), double-blind review via OpenReview.
+        The track is <b>archival</b> — accepted papers appear in the WACV 2027 workshop proceedings / IEEE Xplore.
+      </p>
+      <table class="dates">
+        <tr><th>Submission deadline</th><td>October 6, 2026</td></tr>
+        <tr><th>Notification</th><td>October 30, 2026</td></tr>
+        <tr><th>Camera-ready</th><td>November 20, 2026</td></tr>
+        <tr><th>Workshop</th><td>January 4–5, 2027 · WACV Disney Springs</td></tr>
+      </table>
+      <p class="note">OpenReview link will be announced here. Dates follow WACV workshop guidelines.</p>
+    </section>
+
+    <section class="container" id="challenge">
+      <h2><span class="mark">挑戦</span> Anime Restoration Challenge</h2>
+      <div class="challenge-grid">
+        <img src="imgs/challenge.jpg" alt="Anime restoration before/after — low-resolution source vs. 4K upscaling">
+        <div>
+          <p>
+            Flagship challenge on
+            <a href="https://mv-lab.github.io/reanime/" target="_blank" rel="noopener"><b>Re-Anime600</b></a>:
+            video restoration and upscaling of anime, building on AIGENS at CVPR.
+            Public baselines, a leaderboard, and prizes for the top teams.
+          </p>
+          <p>
+            600 curated high-fidelity clips for NR-IQA and super-resolution —
+            the missing standard the community has been waiting for.
+          </p>
+          <p class="prizes">Results session during the workshop. Stay tuned for the challenge kit. 🏆</p>
+        </div>
+      </div>
+      <img class="teaser" src="imgs/teaser.png" alt="Re-Anime600 samples across NIQE, MANIQA, CLIPIQA, and HyperIQA">
+      <p class="caption">Re-Anime600 — clips spanning low, median, and high quality across four NR-IQA axes.</p>
+    </section>
+
+    <section class="container" id="schedule">
+      <h2><span class="mark">日程</span> Tentative Schedule</h2>
+      <p class="muted">Half-day · times relative to the slot assigned by WACV (tentative morning).</p>
+      <table class="schedule">
+        <tr><td>09:00 – 09:10</td><td>Welcome &amp; overview</td></tr>
+        <tr><td>09:10 – 09:40</td><td>Invited talk — academia (animation / media / evaluation)</td></tr>
+        <tr><td>09:40 – 10:10</td><td>Invited talk — industry (production AI / localization)</td></tr>
+        <tr class="break"><td>10:10 – 10:30</td><td>Coffee &amp; posters</td></tr>
+        <tr><td>10:30 – 11:00</td><td>Anime Restoration Challenge — results &amp; baselines</td></tr>
+        <tr><td>11:00 – 11:35</td><td>Contributed orals / spotlights</td></tr>
+        <tr><td>11:35 – 12:00</td><td>Panel (metrics, motion control, data/IP, creator tools) &amp; closing</td></tr>
+      </table>
+    </section>
+
+    <section class="container" id="organizers">
+      <h2><span class="mark">主催</span> Organizers</h2>
+      <div class="team-grid">
+        <div class="person">
+          <a href="https://mv-lab.github.io/" target="_blank" rel="noopener">
+            <span class="person-photo">
+              <img src="imgs/marcos-anime.png" alt="Marcos V. Conde">
+              <img class="photo-real" src="imgs/marcos.jpg" alt="">
+            </span>
+            <h3>Marcos V. Conde</h3>
+            <p>Univ. of Würzburg · Tenkai AI</p>
+          </a>
+        </div>
+        <div class="person">
+          <a href="https://www.dmi.unict.it/fargetta/" target="_blank" rel="noopener">
+            <span class="person-photo">
+              <img src="imgs/georgia-anime.png" alt="Georgia Fargetta">
+              <img class="photo-real" src="imgs/georgia.jpg" alt="">
+            </span>
+            <h3>Georgia Fargetta</h3>
+            <p>Univ. of Catania · IPLab</p>
+          </a>
+        </div>
+      </div>
+      <p class="contact">
+        Primary contact:
+        <a href="mailto:marcos.conde@uni-wuerzburg.de">marcos.conde@uni-wuerzburg.de</a>
+        ·
+        <a href="mailto:georgia.fargetta@unict.it">georgia.fargetta@unict.it</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a href="https://wacv.thecvf.com" target="_blank" rel="noopener">
+        <img class="wacv-logo" src="imgs/wacv-logo.png" alt="WACV 2027">
+      </a>
+      <p>
+        AINIME · AI for Animation · 1st Edition · Workshop at
+        <a href="https://wacv.thecvf.com" target="_blank" rel="noopener">WACV 2027</a>,
+        Disney Springs, Buena Vista, FL.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
