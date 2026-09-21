@@ -363,6 +363,20 @@ main { padding-bottom: 1.5rem; position: relative; z-index: 1; }
   font-style: italic;
 }
 
+.dataset-notice {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--muted);
+  text-align: center;
+  max-width: 640px;
+  margin: 0.55rem auto 0;
+  padding: 0 8px;
+}
+
+.dataset-notice + .dataset-notice {
+  margin-top: 0.15rem;
+}
+
 /* ---------- Schedule ---------- */
 .schedule {
   width: 100%;
@@ -393,15 +407,45 @@ main { padding-bottom: 1.5rem; position: relative; z-index: 1; }
 .schedule .break td:first-child { font-style: normal; }
 
 /* ---------- Team ---------- */
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(160px, 200px));
-  justify-content: start;
-  gap: 1.6rem 1.6rem;
+.team-scroll {
   margin-top: 1.4rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--red) var(--paper-2);
+  padding-bottom: 0.35rem;
 }
 
-.person { text-align: center; }
+.team-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.team-scroll::-webkit-scrollbar-track {
+  background: var(--paper-2);
+  border-radius: 3px;
+}
+
+.team-scroll::-webkit-scrollbar-thumb {
+  background: var(--red);
+  border-radius: 3px;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.6rem;
+  width: max-content;
+  min-width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.person {
+  flex: 0 0 180px;
+  width: 180px;
+  text-align: center;
+}
 
 .person a { color: inherit; font-weight: inherit; }
 
@@ -505,9 +549,9 @@ main { padding-bottom: 1.5rem; position: relative; z-index: 1; }
   .hero h1 { font-size: clamp(2.3rem, 12vw, 3.2rem); }
   .topic-grid,
   .challenge-grid { grid-template-columns: 1fr; }
-  .team-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.2rem 0.9rem;
+  .person {
+    flex-basis: 160px;
+    width: 160px;
   }
   .schedule td:first-child { width: 7.2rem; font-size: 0.92rem; }
   .dates th { width: 48%; }
