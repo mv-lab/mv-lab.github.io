@@ -292,6 +292,32 @@ main { padding-bottom: 1.5rem; position: relative; z-index: 1; }
 
 .dates td { font-weight: 700; color: var(--ink); }
 
+.cfp-actions {
+  margin: 1.2rem 0 0.4rem;
+}
+
+.submit-btn {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  color: var(--paper);
+  background: var(--red);
+  padding: 14px 38px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 0 var(--ink);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.2s ease;
+}
+
+.submit-btn:hover {
+  color: var(--paper);
+  background: var(--red-deep);
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px 0 var(--ink);
+}
+
 .note {
   margin-top: 0.9rem;
   font-size: 0.98rem;
@@ -369,7 +395,7 @@ main { padding-bottom: 1.5rem; position: relative; z-index: 1; }
 /* ---------- Team ---------- */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(160px, 200px));
+  grid-template-columns: repeat(3, minmax(160px, 200px));
   justify-content: start;
   gap: 1.6rem 1.6rem;
   margin-top: 1.4rem;
